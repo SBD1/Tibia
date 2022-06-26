@@ -13,7 +13,7 @@ Repositório para o projeto de desenvolvimento do jogo Tibia / PokeTibia da disc
 PokeTibia é uma variação de ATS, que desenvolve o mundo Pokémon inspirado nas mecânicas do jogo Tíbia. Atualmente o PokeTíbia é referência em Pokemón Online
 
 
-## :computer: Contribuidores
+## :computer: Time
 <div id="div1">
 <br>
 <table>
