@@ -1,4 +1,5 @@
-# Tibia / PokeTibia 
+
+# :collision: Tibia / PokeTibia 
 Repositório para o projeto de desenvolvimento do jogo Tibia / PokeTibia da disciplina de Sistema de Bancos de Dados 1
 
 
@@ -8,11 +9,11 @@ Repositório para o projeto de desenvolvimento do jogo Tibia / PokeTibia da disc
 
 
 
-### Sobre
+## :video_game:  Sobre
 PokeTibia é uma variação de ATS, que desenvolve o mundo Pokémon inspirado nas mecânicas do jogo Tíbia. Atualmente o PokeTíbia é referência em Pokemón Online
 
 
-### Contribuidores
+## :computer: Contribuidores
 <div id="div1">
 <br>
 <table>
