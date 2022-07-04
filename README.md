@@ -12,23 +12,21 @@ Repositório para o projeto de desenvolvimento do jogo Tibia da disciplina de Si
 
 Tibia, jogo de RPG gratuito para computadores, é um dos maiores sucessos dentre os games onlines. Ficou bastante famoso no final do século XX e começo do século XXI, e até hoje, continua fazendo bastante sucesso entre os fãs do gênero.
 
-## :computer: Equipe
+## Equipe
 
 <div id="div1">
 <br>
 <table>
      <tr>
-     <td><a href="https://github.com/roginaldosemog">Igor Aragão</a></td>
-        <td><a href="https://github.com/roginaldosemog"><img src="https://avatars.githubusercontent.com/u/18501566?v=4" width="50px;"</a></td>
-        <td><a href="https://github.com/matheussalimdeoliveira">Matheus Salim</a></td>
-        <td><a href="https://github.com/matheussalimdeoliveira"><img src="https://avatars.githubusercontent.com/u/80415489?v=4" width="50px;"</a></td><td><a href="https://github.com/laisramos123">Laís Ramos</a></td>
-        <td><a href="https://github.com/laisramos123"><img src="https://avatars.githubusercontent.com/u/38669960?v=4" width="50px;"</a></td>
+        <td><a href="">Matheus Salim</a></td>
+        <td><a href="https://github.com/matheussalimdeoliveira"><img src="" width="50px;"</a></td><td><a href="https://github.com/laisramos123">Laís Ramos</a></td>
+        <td><a href=""><img src="" width="50px;"</a></td>
     </tr>
     <tr>
-        <td><a href="https://github.com/jvsdurso">João Durso</a></td>
-        <td><a href="https://github.com/jvsdurso"><img src="https://avatars.githubusercontent.com/u/69814362?v=4" width="50px;"</a></td>
+        <td><a href="">João Durso</a></td>
+        <td><a href="https://github.com/jvsdurso"><img src="" width="50px;"</a></td>
         <td><a href="https://github.com/tomasvelos0">Tomas Veloso</a></td>
-        <td><a href="https://github.com/tomasvelos0"><img src="https://avatars.githubusercontent.com/u/48571671?v=4" width="50px;"</a></td>
+        <td><a href=""><img src="" width="50px;"</a></td>
         <td></td>
         <td></td>
     </tr>
@@ -40,6 +38,11 @@ Tibia, jogo de RPG gratuito para computadores, é um dos maiores sucessos dentre
 <p align="center">
     <img src= 'assets/tibiatrailer.gif' >
 </p>
+
+## :computer: Equipe
+
+| [<img src="https://avatars.githubusercontent.com/u/18501566?v=4" width=115><br><sub>Igor Aragão</sub>](https://github.com/roginaldosemog) | [<img src="https://avatars.githubusercontent.com/u/80415489?v=4" width=115><br><sub>Matheus Salim</sub>](https://github.com/matheussalimdeoliveira) | [<img src="https://avatars.githubusercontent.com/u/38669960?v=4" width=115><br><sub>Laís Ramos</sub>](https://github.com/laisramos123) | [<img src="https://avatars.githubusercontent.com/u/69814362?v=4" width=115><br><sub>João Durso</sub>](https://github.com/jvsdurso) | [<img src="https://avatars.githubusercontent.com/u/48571671?v=4" width=115><br><sub>Tomás Veloso</sub>](https://github.com/tomasvelos0) |
+| :---------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------: | --------------------------------------------------------------------------------------------------------------------------------------- |
 
 ### Entregas
 
