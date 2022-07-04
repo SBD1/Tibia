@@ -1,7 +1,9 @@
-![Tibia_Logo](https://user-images.githubusercontent.com/69814362/177208866-0d9c5e6c-b827-46b8-99e9-37abf1457123.png))
+<p= align="center">
+    <a href="https://www.tibia.com/mmorpg/free-multiplayer-online-role-playing-game.php"><img src="https://user-images.githubusercontent.com/69814362/177208866-0d9c5e6c-b827-46b8-99e9-37abf1457123.png" alt="Tibia"></a>
+</p>
 
 <p align="center">
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
+    <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
 </p>
 
 Repositório para o projeto de desenvolvimento do jogo Tibia da disciplina de Sistema de Bancos de Dados 1
