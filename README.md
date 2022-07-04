@@ -1,4 +1,4 @@
-<p= align="center">
+<p align="center">
     <a href="https://www.tibia.com/mmorpg/free-multiplayer-online-role-playing-game.php"><img src="https://user-images.githubusercontent.com/69814362/177208866-0d9c5e6c-b827-46b8-99e9-37abf1457123.png" alt="Tibia"></a>
 </p>
 
