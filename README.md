@@ -6,6 +6,7 @@
     <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
 </p>
 
+## :page_facing_up: Descrição
 Repositório para o projeto de desenvolvimento do jogo Tibia da disciplina de Sistema de Bancos de Dados 1
 
 ## :video_game: Sobre
@@ -14,7 +15,7 @@ Tibia, jogo de RPG gratuito para computadores, é um dos maiores sucessos dentre
 
 
 <p align="center">
-    <img src= 'assets/tibiagif.gif' width=1920 heigth=1080>
+    <img src= 'assets/tibiagif.gif' width=960 heigth=540>
 </p>
 
 ## :computer: Equipe
