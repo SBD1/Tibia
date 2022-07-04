@@ -12,10 +12,9 @@ Repositório para o projeto de desenvolvimento do jogo Tibia da disciplina de Si
 
 Tibia, jogo de RPG gratuito para computadores, é um dos maiores sucessos dentre os games onlines. Ficou bastante famoso no final do século XX e começo do século XXI, e até hoje, continua fazendo bastante sucesso entre os fãs do gênero.
 
-<p></p>
 
 <p align="center">
-    <img src= 'assets/tibiatrailer.gif' >
+    <img src= 'assets/tibiagif.gif' width=1920 heigth=1080>
 </p>
 
 ## :computer: Equipe
