@@ -1,19 +1,17 @@
-
-# :collision: Tibia / PokeTibia 
-Repositório para o projeto de desenvolvimento do jogo Tibia / PokeTibia da disciplina de Sistema de Bancos de Dados 1
-
+![Tibia_Logo](https://user-images.githubusercontent.com/69814362/177208866-0d9c5e6c-b827-46b8-99e9-37abf1457123.png))
 
 <p align="center">
-    <img   src="assets/pokemon.png" width ="200px"  >
+   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
 </p>
 
+Repositório para o projeto de desenvolvimento do jogo Tibia da disciplina de Sistema de Bancos de Dados 1
 
+## :video_game: Sobre
 
-## :video_game:  Sobre
-PokeTibia é uma variação de ATS, que desenvolve o mundo Pokémon inspirado nas mecânicas do jogo Tíbia. Atualmente o PokeTíbia é referência em Pokemón Online
+Tibia, jogo de RPG gratuito para computadores, é um dos maiores sucessos dentre os games onlines. Ficou bastante famoso no final do século XX e começo do século XXI, e até hoje, continua fazendo bastante sucesso entre os fãs do gênero.
 
+## :computer: Equipe
 
-## :computer: Time
 <div id="div1">
 <br>
 <table>
@@ -38,23 +36,14 @@ PokeTibia é uma variação de ATS, que desenvolve o mundo Pokémon inspirado na
 <p></p>
 
 <p align="center">
-    <img src= 'assets/char.gif' >
+    <img src= 'assets/tibiatrailer.gif' >
 </p>
 
-
-
-
-
-
-
 ### Entregas
-|Módulo|Data de entrega do Módulo|Entrega|
-|--|--|--|
-| Módulo 1 |04/07/2022|Modelagem do projeto|
-|Modulo 2|||
-|Módulo 3 |||
-|Módulo 4|||
 
-
-
-
+| Módulo   | Data de entrega do Módulo | Entrega              |
+| -------- | ------------------------- | -------------------- |
+| Módulo 1 | 04/07/2022                | Modelagem do projeto |
+| Modulo 2 |                           |                      |
+| Módulo 3 |                           |                      |
+| Módulo 4 |                           |                      |
