@@ -12,27 +12,6 @@ Repositório para o projeto de desenvolvimento do jogo Tibia da disciplina de Si
 
 Tibia, jogo de RPG gratuito para computadores, é um dos maiores sucessos dentre os games onlines. Ficou bastante famoso no final do século XX e começo do século XXI, e até hoje, continua fazendo bastante sucesso entre os fãs do gênero.
 
-## Equipe
-
-<div id="div1">
-<br>
-<table>
-     <tr>
-        <td><a href="">Matheus Salim</a></td>
-        <td><a href="https://github.com/matheussalimdeoliveira"><img src="" width="50px;"</a></td><td><a href="https://github.com/laisramos123">Laís Ramos</a></td>
-        <td><a href=""><img src="" width="50px;"</a></td>
-    </tr>
-    <tr>
-        <td><a href="">João Durso</a></td>
-        <td><a href="https://github.com/jvsdurso"><img src="" width="50px;"</a></td>
-        <td><a href="https://github.com/tomasvelos0">Tomas Veloso</a></td>
-        <td><a href=""><img src="" width="50px;"</a></td>
-        <td></td>
-        <td></td>
-    </tr>
-</table>
-</div>
-
 <p></p>
 
 <p align="center">
