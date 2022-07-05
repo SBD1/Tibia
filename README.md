@@ -23,6 +23,9 @@ Tibia, jogo de RPG gratuito para computadores, é um dos maiores sucessos dentre
 | [<img src="https://avatars.githubusercontent.com/u/18501566?v=4" width=115><br><sub>Igor Aragão</sub>](https://github.com/roginaldosemog) | [<img src="https://avatars.githubusercontent.com/u/80415489?v=4" width=115><br><sub>Matheus Salim</sub>](https://github.com/matheussalimdeoliveira) | [<img src="https://avatars.githubusercontent.com/u/38669960?v=4" width=115><br><sub>Laís Ramos</sub>](https://github.com/laisramos123) | [<img src="https://avatars.githubusercontent.com/u/69814362?v=4" width=115><br><sub>João Durso</sub>](https://github.com/jvsdurso) | [<img src="https://avatars.githubusercontent.com/u/48571671?v=4" width=115><br><sub>Tomás Veloso</sub>](https://github.com/tomasvelos0) |
 | :---------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------: | --------------------------------------------------------------------------------------------------------------------------------------- |
 
+## Apresentações
+<a href="https://youtu.be/7QbPC0fFgAU">Apresentação 1<\a>
+
 ### Entregas
 
 | Módulo   | Data de entrega do Módulo | Entrega              |
