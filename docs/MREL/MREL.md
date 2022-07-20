@@ -18,7 +18,7 @@ O MREL (Modelo Relacional) é utilizado para apoiar a implementação das aplica
 
 ### MREL v1.0
 
-Como o Modelo Relacional foi feito no Google Drive, através da plataforma Diagrams(draw.io), não teve como restaurar todo o histórico de modificações. Portanto, somente as mudanças a partir da versão 1.0 serão documentadas.
+Como o Modelo Relacional foi feito no [Google Drive](https://drive.google.com/file/d/116N7p4iBj1Jgl5VEohrv1pRYw0CqJupo/view?usp=sharing), através da plataforma Diagrams(draw.io), não teve como restaurar todo o histórico de modificações. Portanto, somente as mudanças a partir da versão 1.0 serão documentadas.
 
 ![MREL v1.0](../assets/images/MREL/MREL.png)
 
