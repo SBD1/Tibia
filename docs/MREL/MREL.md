@@ -9,6 +9,6 @@
 
 O MREL (Modelo Relacional) é utilizado para apoiar a implementação das aplicações, apresentando um projeto lógico de como as entidades e relacionamentos serão mapeadas no SGBD, porém é um modelo lógico não atrelado a algum SGBD específico.
 
-![MREL v1.0](./assets/images/MREL/MREL.png)
+![MREL v1.0](../assets/images/MREL/MREL.png)
 
 ## Versões Anteriores

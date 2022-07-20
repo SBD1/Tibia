@@ -13,6 +13,6 @@ O DER (Diagrama Entidade-Relacionamento) é utilizado para representar em forma 
 
 ## Diagrama Entidade-Relacionamento
 
-![MER v1.0](./assets/images/MER/MER.png)
+![MER v1.0](../assets/images/MER/MER.png)
 
 ## Versões Anteriores
