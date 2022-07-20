@@ -2,8 +2,8 @@
 
 | Data       | Versão | Alteração            | Autor                                     |
 | ---------- | ------ | -------------------- | ----------------------------------------- |
-| 03/07/2022 | 0.1    | Criação do documento | [João Durso](https://github.com/jvsdurso) |
-| 04/07/2022 | 0.2    | Adição do MER v1.0   | [João Durso](https://github.com/jvsdurso) |
+| 03/07/2022 | 0.1    | Criação do documento | [João Durso](https://github.com/jvsdurso),  [Tomás Veloso](https://github.com/tomasvelos0), [Laís Ramos](https://github.com/laisramos123) |
+| 04/07/2022 | 0.2    | Adição do MER v1.0   | [João Durso](https://github.com/jvsdurso),  [Tomás Veloso](https://github.com/tomasvelos0), [Laís Ramos](https://github.com/laisramos123)|
 
 ## Modelo Entidade-Relacionamento
 
