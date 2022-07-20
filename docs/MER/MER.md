@@ -13,6 +13,18 @@ O DER (Diagrama Entidade-Relacionamento) é utilizado para representar em forma 
 
 ## Diagrama Entidade-Relacionamento
 
-![MER v1.0](../assets/images/MER/MER.png)
+![DER v1.0](../assets/images/MER/MER.png)
 
 ## Versões Anteriores
+
+<details>
+<summary>Clique para apresentar a versão 1.0 do DER</summary>
+
+### DER v1.0
+
+Como o Diagrama Entidade-Relacionamento foi feito no Google Drive, através da plataforma Diagrams(draw.io), não teve como restaurar todo o histórico de modificações. Portanto, somente as mudanças a partir da versão 1.0 serão documentadas.
+
+![DER v1.0](../assets/images/MER/MER.png)
+
+**Autor(es):** [João Durso](https://github.com/jvsdurso) <br><br>
+</details>
