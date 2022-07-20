@@ -15,7 +15,7 @@ Tibia, jogo de RPG gratuito para computadores, é um dos maiores sucessos dentre
 
 
 <p align="center">
-    <img src= 'assets/tibiagif.gif' width=960 heigth=540>
+    <img src= './assets/images/tibiagif.gif' width=960 heigth=540>
 </p>
 
 ## :computer: Equipe
