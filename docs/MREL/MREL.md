@@ -1,20 +1,20 @@
 ## Histórico de revisão
- 
-| Data       | Versão | Alteração            | Autor                                     |
-| ---------- | ------ | -------------------- | ----------------------------------------- |
-| 03/07/2022 | 0.1    | Criação do documento | [João Durso](https://github.com/jvsdurso),  [Tomás Veloso](https://github.com/tomasvelos0), [Laís Ramos](https://github.com/laisramos123) |
-| 04/07/2022 | 0.2    | Adição do MREL v1.0  | [João Durso](https://github.com/jvsdurso),  [Tomás Veloso](https://github.com/tomasvelos0), [Laís Ramos](https://github.com/laisramos123) |
-| 31/07/2022 | 0.3    | Correção de erros | [João Durso](https://github.com/jvsdurso), [Laís Ramos](https://github.com/laisramos123) |
-| 02/08/2022 | 0.3    | Melhoria de documentos | [João Durso](https://github.com/jvsdurso), [Laís Ramos](https://github.com/laisramos123) |
- 
+
+| Data       | Versão | Alteração              | Autor                                                                                                                                    |
+| ---------- | ------ | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| 03/07/2022 | 0.1    | Criação do documento   | [João Durso](https://github.com/jvsdurso), [Tomás Veloso](https://github.com/tomasvelos0), [Laís Ramos](https://github.com/laisramos123) |
+| 04/07/2022 | 0.2    | Adição do MREL v1.0    | [João Durso](https://github.com/jvsdurso), [Tomás Veloso](https://github.com/tomasvelos0), [Laís Ramos](https://github.com/laisramos123) |
+| 31/07/2022 | 0.3    | Correção de erros      | [João Durso](https://github.com/jvsdurso), [Laís Ramos](https://github.com/laisramos123)                                                 |
+| 02/08/2022 | 0.3    | Melhoria de documentos | [João Durso](https://github.com/jvsdurso), [Laís Ramos](https://github.com/laisramos123)                                                 |
+
 ## Modelo Relacional
- 
+
 O MREL (Modelo Relacional) é utilizado para apoiar a implementação das aplicações, apresentando um projeto lógico de como as entidades e relacionamentos serão mapeadas no SGBD, porém é um modelo lógico não atrelado a algum SGBD específico.
- 
+
 ![MREL v1.1](../assets/images/MREL/MRELv1_1.png)
- 
+
 ## Versões Anteriores
- 
+
 <details>
 <summary>Clique para apresentar a versão 1.0 do MREL</summary>
  
@@ -24,7 +24,7 @@ Como o Modelo Relacional foi feito no [Google Drive](https://drive.google.com/fi
  
 ![MREL v1.0](../assets/images/MREL/MRELv1_0.png)
  
-**Autor(es):**
+**Autor(es):**<br>
 [João Durso](https://github.com/jvsdurso)
 </details>
 
@@ -43,10 +43,9 @@ As modificações realizadas nesta versão foram:
 - Habilidade e Inventário não possui mais um id próprio, pois são entidades fraca. Agora a chave primária é o próprio 'Player' por meio de 'nomePlayer';
 - Correções gramaticais.
 
- 
 ![MREL v1.1](../assets/images/MREL/MRELv1_1.png)
- 
-**Autor(es):**
-[João Durso](https://github.com/jvsdurso) <br>
-[Lais Ramos](https://github.com/laisramos123) <br><br>
+
+**Autor(es):**<br>
+[João Durso](https://github.com/jvsdurso), [Lais Ramos](https://github.com/laisramos123) <br><br>
+
 </details>

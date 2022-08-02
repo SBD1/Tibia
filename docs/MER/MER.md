@@ -1,26 +1,25 @@
-
 ## Histórico de revisão
- 
-| Data       | Versão | Alteração            | Autor                                     |
-| ---------- | ------ | -------------------- | ----------------------------------------- |
-| 03/07/2022 | 0.1    | Criação do documento | [João Durso](https://github.com/jvsdurso),  [Tomás Veloso](https://github.com/tomasvelos0), [Laís Ramos](https://github.com/laisramos123) |
-| 04/07/2022 | 0.2    | Adição do MER v1.0   | [João Durso](https://github.com/jvsdurso),  [Tomás Veloso](https://github.com/tomasvelos0), [Laís Ramos](https://github.com/laisramos123)|
-| 31/07/2022 | 0.3    | Correção de erros gramaticais e aperfeiçoamento da disposição dos elementos do Diagrama  | [João Durso](https://github.com/jvsdurso), [Laís Ramos](https://github.com/laisramos123)|
-| 31/07/2022 | 0.4    | Adição das relações |  [Laís Ramos](https://github.com/laisramos123)|
-| 02/08/2022 | 0.5    | Melhoria de documento |  [João Durso](https://github.com/jvsdurso), [Laís Ramos](https://github.com/laisramos123)|
- 
+
+| Data       | Versão | Alteração                                                                               | Autor                                                                                                                                    |
+| ---------- | ------ | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| 03/07/2022 | 0.1    | Criação do documento                                                                    | [João Durso](https://github.com/jvsdurso), [Tomás Veloso](https://github.com/tomasvelos0), [Laís Ramos](https://github.com/laisramos123) |
+| 04/07/2022 | 0.2    | Adição do MER v1.0                                                                      | [João Durso](https://github.com/jvsdurso), [Tomás Veloso](https://github.com/tomasvelos0), [Laís Ramos](https://github.com/laisramos123) |
+| 31/07/2022 | 0.3    | Correção de erros gramaticais e aperfeiçoamento da disposição dos elementos do Diagrama | [João Durso](https://github.com/jvsdurso), [Laís Ramos](https://github.com/laisramos123)                                                 |
+| 31/07/2022 | 0.4    | Adição das relações                                                                     | [Laís Ramos](https://github.com/laisramos123)                                                                                            |
+| 02/08/2022 | 0.5    | Melhoria de documento                                                                   | [João Durso](https://github.com/jvsdurso), [Laís Ramos](https://github.com/laisramos123)                                                 |
+
 ## Modelo Entidade-Relacionamento
- 
+
 O MER (Modelo Entidade-Relacionamento) é utilizado para descrever os objetos do mundo real através de **entidades**, que possuem **atributos** e **relacionamentos** para descrever suas propriedades e, desssa forma, representar os aspectos estáticos do Domínio da Aplicação.
- 
+
 O DER (Diagrama Entidade-Relacionamento) é utilizado para representar em forma gráfica o que foi descrito no MER (Modelo Entidade Relacionamento).
- 
+
 ## Diagrama Entidade-Relacionamento
- 
+
 ![DER v1.2](../assets/images/MER/DERv1_2.png)
- 
+
 ## Versões Anteriores
- 
+
 <details>
 <summary>Clique para apresentar a versão 1.0 do DER</summary>
  
@@ -30,7 +29,7 @@ Como o Diagrama Entidade-Relacionamento foi feito no [Google Drive](https://driv
  
 ![DER v1.0](../assets/images/MER/DERv1_0.png)
  
-**Autor(es):** 
+**Autor(es):** <br>
 [João Durso](https://github.com/jvsdurso) <br><br>
 </details>
  
@@ -54,9 +53,8 @@ As modificações realizadas nesta versão foram:
  
 ![DER v1.1](../assets/images/MER/DERv1_1.png)
  
-**Autor(es):** 
-[João Durso](https://github.com/jvsdurso) <br>
-[Lais Ramos](https://github.com/laisramos123) <br><br>
+**Autor(es):** <br>
+[João Durso](https://github.com/jvsdurso), [Lais Ramos](https://github.com/laisramos123) <br><br>
 </details>
 
 <details>
@@ -68,11 +66,8 @@ As modificações realizadas nesta versão foram:
 - Adição de detalhes visuais (dois traços embaixo) para definir chaves candidatas.
  
  
-![DER v1.2](../assets/images/MER/DERv3.png)
+![DER v1.2](../assets/images/MER/DERv1_2.png)
  
-**Autor(es):** 
-[João Durso](https://github.com/jvsdurso) <br>
-[Lais Ramos](https://github.com/laisramos123) <br><br>
+**Autor(es):** <br>
+[João Durso](https://github.com/jvsdurso), [Lais Ramos](https://github.com/laisramos123) <br><br>
 </details>
- 
-
