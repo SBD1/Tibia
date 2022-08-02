@@ -16,7 +16,7 @@ O DER (Diagrama Entidade-Relacionamento) é utilizado para representar em forma 
  
 ## Diagrama Entidade-Relacionamento
  
-![DER v3.0](../assets/images/MER/DERv3.png)
+![DER v1.2](../assets/images/MER/DERv1_2.png)
  
 ## Versões Anteriores
  
@@ -27,21 +27,50 @@ O DER (Diagrama Entidade-Relacionamento) é utilizado para representar em forma 
  
 Como o Diagrama Entidade-Relacionamento foi feito no [Google Drive](https://drive.google.com/file/d/1guPJuix8kxib0uT8hAv54tWpBJPTuFqz/view?usp=sharing), através da plataforma Diagrams(draw.io), não teve como restaurar todo o histórico de modificações. Portanto, somente as mudanças a partir da versão 1.0 serão documentadas.
  
-![DER v1.0](../assets/images/MER/DER.png)
+![DER v1.0](../assets/images/MER/DERv1_0.png)
  
-**Autor(es):** [João Durso](https://github.com/jvsdurso) <br><br>
+**Autor(es):** 
+[João Durso](https://github.com/jvsdurso) <br><br>
 </details>
  
 <details>
-<summary>Clique para apresentar a versão 2.0 do DER</summary>
+<summary>Clique para apresentar a versão 1.1 do DER</summary>
  
-### DER v2.0
-A versão do DER v2.0 foi construída no intuito de corrigir erros gramaticais do diagrama e modificar disposição dos elementos para facilitar a leitura do diagrama.
+### DER v1.1
+As modificações realizadas nesta versão foram:
+- Mudar localização, região e mapa para a direita, para facilitar o entendimento do diagrama;
+- Nome de criatura agora é chave candidata (único);
+- Adição do atributo 'nome' em mapa, região e NPC;
+- O email passa a ser chave primária de conta;
+- ContaPossuiPlayer agora só possui o último acesso, que foi retirado de 'Player';
+- Adição de 'level' em 'Player';
+- Nome de player passa a ser chave primária de player;
+- Player não possui mais capacidade, que foi atrelado ao inventário e às habilidades;
+- Habilidade e Inventário não possui mais um id próprio, pois são entidades fraca. Agora a chave primária é o próprio 'Player' por meio de 'nomePlayer';
+- Vocação não é mais um atributo genérico de Item;
+- Correções gramaticais.
  
  
-![DER v2.0](../assets/images/MER/DERv3.png)
+![DER v1.1](../assets/images/MER/DERv1_1.png)
  
-**Autor(es):** [João Durso](https://github.com/jvsdurso) 
+**Autor(es):** 
+[João Durso](https://github.com/jvsdurso) <br>
+[Lais Ramos](https://github.com/laisramos123) <br><br>
+</details>
+
+<details>
+<summary>Clique para apresentar a versão 1.2 do DER</summary>
+ 
+### DER v1.2
+As modificações realizadas nesta versão foram:
+- Adição de papéis para melhor entendimento do diagrama;
+- Adição de detalhes visuais (dois traços embaixo) para definir chaves candidatas.
+ 
+ 
+![DER v1.2](../assets/images/MER/DERv3.png)
+ 
+**Autor(es):** 
+[João Durso](https://github.com/jvsdurso) <br>
 [Lais Ramos](https://github.com/laisramos123) <br><br>
 </details>
  
