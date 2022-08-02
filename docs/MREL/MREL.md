@@ -5,6 +5,7 @@
 | 03/07/2022 | 0.1    | Criação do documento | [João Durso](https://github.com/jvsdurso),  [Tomás Veloso](https://github.com/tomasvelos0), [Laís Ramos](https://github.com/laisramos123) |
 | 04/07/2022 | 0.2    | Adição do MREL v1.0  | [João Durso](https://github.com/jvsdurso),  [Tomás Veloso](https://github.com/tomasvelos0), [Laís Ramos](https://github.com/laisramos123) |
 | 31/07/2022 | 0.3    | Correção de erros | [João Durso](https://github.com/jvsdurso), [Laís Ramos](https://github.com/laisramos123) |
+| 02/08/2022 | 0.3    | Melhoria de documentos | [João Durso](https://github.com/jvsdurso), [Laís Ramos](https://github.com/laisramos123) |
  
 ## Modelo Relacional
  

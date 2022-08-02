@@ -6,7 +6,8 @@
 | 03/07/2022 | 0.1    | Criação do documento | [João Durso](https://github.com/jvsdurso),  [Tomás Veloso](https://github.com/tomasvelos0), [Laís Ramos](https://github.com/laisramos123) |
 | 04/07/2022 | 0.2    | Adição do MER v1.0   | [João Durso](https://github.com/jvsdurso),  [Tomás Veloso](https://github.com/tomasvelos0), [Laís Ramos](https://github.com/laisramos123)|
 | 31/07/2022 | 0.3    | Correção de erros gramaticais e aperfeiçoamento da disposição dos elementos do Diagrama  | [João Durso](https://github.com/jvsdurso), [Laís Ramos](https://github.com/laisramos123)|
-| 31/07/2022 | 0.4    |Adição das relações |  [Laís Ramos](https://github.com/laisramos123)|
+| 31/07/2022 | 0.4    | Adição das relações |  [Laís Ramos](https://github.com/laisramos123)|
+| 02/08/2022 | 0.5    | Melhoria de documento |  [João Durso](https://github.com/jvsdurso), [Laís Ramos](https://github.com/laisramos123)|
  
 ## Modelo Entidade-Relacionamento
  
