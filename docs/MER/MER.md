@@ -5,7 +5,8 @@
 | ---------- | ------ | -------------------- | ----------------------------------------- |
 | 03/07/2022 | 0.1    | Criação do documento | [João Durso](https://github.com/jvsdurso),  [Tomás Veloso](https://github.com/tomasvelos0), [Laís Ramos](https://github.com/laisramos123) |
 | 04/07/2022 | 0.2    | Adição do MER v1.0   | [João Durso](https://github.com/jvsdurso),  [Tomás Veloso](https://github.com/tomasvelos0), [Laís Ramos](https://github.com/laisramos123)|
-| 31/07/2022 | 0.3    | Correção de erros através do MER v3.0   | [João Durso](https://github.com/jvsdurso), [Laís Ramos](https://github.com/laisramos123)|
+| 31/07/2022 | 0.3    | Correção de erros gramaticais e aperfeiçoamento da disposição dos elementos do Diagrama  | [João Durso](https://github.com/jvsdurso), [Laís Ramos](https://github.com/laisramos123)|
+| 31/07/2022 | 0.4    |Adição das relações |  [Laís Ramos](https://github.com/laisramos123)|
  
 ## Modelo Entidade-Relacionamento
  
@@ -35,10 +36,10 @@ Como o Diagrama Entidade-Relacionamento foi feito no [Google Drive](https://driv
 <summary>Clique para apresentar a versão 2.0 do DER</summary>
  
 ### DER v2.0
-Analisando o DER v2.0, foram identificados erros gramaticais e a falta de alguns atributos. Por isso a necessidade da versão v3.0.
+A versão do DER v2.0 foi construída no intuito de corrigir erros gramaticais do diagrama e modificar disposição dos elementos para facilitar a leitura do diagrama.
  
  
-![DER v2.0](../assets/images/MER/DER.png)
+![DER v2.0](../assets/images/MER/DERv3.png)
  
 **Autor(es):** [João Durso](https://github.com/jvsdurso) 
 [Lais Ramos](https://github.com/laisramos123) <br><br>
