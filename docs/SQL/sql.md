@@ -17,11 +17,11 @@ O primeiro, DDL, para a criação das tabelas do projeto no banco de dados, e o 
 
 ### DDL - _Data Definition Language_
 
-- [ddl-db.sql](https://raw.githubusercontent.com/SBD1/Tibia/main/docs/SQL/ddl-db.sql)
+- [DDL](https://raw.githubusercontent.com/SBD1/Tibia/main/docs/SQL/ddl-db.sql)
 
 ### DML - _Data Manipulation Language_
 
-- [dml-db.sql](https://raw.githubusercontent.com/SBD1/Tibia/main/docs/SQL/dml-db.sql)
+- [DML](https://raw.githubusercontent.com/SBD1/Tibia/main/docs/SQL/dml-db.sql)
 
 ## Referências
 
