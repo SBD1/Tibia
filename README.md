@@ -30,9 +30,9 @@ Tibia, jogo de RPG gratuito para computadores, é um dos maiores sucessos dentre
 
 ### Entregas
 
-| Módulo   | Data de entrega do Módulo | Entrega              |
-| -------- | ------------------------- | -------------------- |
-| Módulo 1 | 04/07/2022                | Modelagem do projeto |
-| Modulo 2 |                           |                      |
-| Módulo 3 |                           |                      |
-| Módulo 4 |                           |                      |
+| Módulo   | Data de entrega do Módulo | Entrega                                                  |
+| -------- | ------------------------- | --------------------                                     |
+| Módulo 1 | 04/07/2022                | Modelagem do projeto                                     |
+| Modulo 2 | 01/08/2022                | Introdução à linguagem SQL no projeto                    |
+| Módulo 3 |                           |                                                          |
+| Módulo 4 |                           |                                                          |
