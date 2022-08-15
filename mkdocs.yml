@@ -1,0 +1,16 @@
+site_name: Tíbia
+theme:
+  name: material
+  logo: assets/images/tibiaicon.png
+  favicon: assets/images/tibiaicon.png
+  palette:
+    scheme: slate
+    primary: black
+extra_css:
+  - assets/css/extra.css
+nav:
+  - Módulo 1 - Modelagem:
+    - MER: MER/MER.md
+    - MREL: MREL/MREL.md
+  - Módulo 2 - SQL:
+    - SQL: SQL/sql.md
