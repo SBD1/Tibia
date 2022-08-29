@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    command: yarn start
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/usr/app
+      
+  db:
+    container_name: 'database_node'
+    image: postgres
+    restart: always
+    
+    ports:
+      - '5435:5432'
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - TZ=America/Sao_Paulo
+  
+
+
