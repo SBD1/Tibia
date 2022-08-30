@@ -1,16 +1,18 @@
 {
-  "name": "Grupo01_TibiaPoketibia",
+  "name": "tibia",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/SBD1/Grupo01_TibiaPoketibia.git",
   "author": "laisramos123 <laisramos123@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "start": "nodemon src/index.js"
   },
   "dependencies": {
     "body-parser": "^1.13.2",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security",
+    "pg": "^8.8.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
