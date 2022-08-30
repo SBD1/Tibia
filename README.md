@@ -20,8 +20,8 @@ Tibia, jogo de RPG gratuito para computadores, é um dos maiores sucessos dentre
 
 ## :computer: Equipe
 
-| [<img src="https://avatars.githubusercontent.com/u/18501566?v=4" width=115><br><sub>Igor Aragão</sub>](https://github.com/roginaldosemog)  | [<img src="https://avatars.githubusercontent.com/u/38669960?v=4" width=115><br><sub>Laís Ramos</sub>](https://github.com/laisramos123) | [<img src="https://avatars.githubusercontent.com/u/69814362?v=4" width=115><br><sub>João Durso</sub>](https://github.com/jvsdurso) | [<img src="https://avatars.githubusercontent.com/u/48571671?v=4" width=115><br><sub>Tomás Veloso</sub>](https://github.com/tomasvelos0) |
-|  :-------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------: | --------------------------------------------------------------------------------------------------------------------------------------- |
+| [<img src="https://avatars.githubusercontent.com/u/18501566?v=4" width=115><br><sub>Igor Aragão</sub>](https://github.com/roginaldosemog) | [<img src="https://avatars.githubusercontent.com/u/38669960?v=4" width=115><br><sub>Laís Ramos</sub>](https://github.com/laisramos123) | [<img src="https://avatars.githubusercontent.com/u/69814362?v=4" width=115><br><sub>João Durso</sub>](https://github.com/jvsdurso) | [<img src="https://avatars.githubusercontent.com/u/48571671?v=4" width=115><br><sub>Tomás Veloso</sub>](https://github.com/tomasvelos0) |
+| :---------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------: | --------------------------------------------------------------------------------------------------------------------------------------- |
 
 ## Apresentações
 
@@ -30,9 +30,9 @@ Tibia, jogo de RPG gratuito para computadores, é um dos maiores sucessos dentre
 
 ### Entregas
 
-| Módulo   | Data de entrega do Módulo | Entrega              |
-| -------- | ------------------------- | -------------------- |
-| Módulo 1 | 04/07/2022                | Modelagem do projeto |
-| Modulo 2 | 01/08/2022                | DDL + DML (parcial)  |
-| Módulo 3 |                           |                      |
-| Módulo 4 |                           |                      |
+| Módulo   | Data de entrega do Módulo | Entrega                                    |
+| -------- | ------------------------- | ------------------------------------------ |
+| Módulo 1 | 04/07/2022                | Modelagem do projeto                       |
+| Modulo 2 | 01/08/2022                | DDL + DML (parcial)                        |
+| Módulo 3 | 29/08/2022                | Triggers, stored procedures e transactions |
+| Módulo 4 |                           |                                            |
