@@ -68,3 +68,28 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+--- Retorna preço do item
+CREATE OR REPLACE FUNCTION get_preco_item (_id_item INTEGER)
+  RETURNS BIGINT AS $$
+  DECLARE
+  	_preco_item BIGINT;
+BEGIN
+  	_preco_item := (SELECT COALESCE(armas.preco, equipamento.preco, mochila.preco)  FROM item 
+					FULL OUTER JOIN armas ON item.id = armas.id
+					FULL OUTER JOIN equipamento ON item.id = equipamento.id
+					FULL OUTER JOIN mochila ON item.id = mochila.id 
+					WHERE item.id = _id_item);
+	RETURN _preco_item;
+END;	
+$$ LANGUAGE plpgsql;
+
+-- Função que retorna o tipo do item a partir do id dele
+CREATE OR REPLACE FUNCTION get_tipo_item (_id_item INTEGER)
+  RETURNS tipoitem AS $$
+  DECLARE
+  	_tipo_item tipoitem;
+BEGIN
+	_tipo_item := (SELECT tipo FROM item WHERE item.id = _id_item);
+  	RETURN _tipo_item;
+END;
+$$ LANGUAGE plpgsql;
