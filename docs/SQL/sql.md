@@ -1,8 +1,9 @@
 # SQL
 
-|    Data    | Versão |      Descrição       |                                                                                           Autor                                                                                            |
-| :--------: | :----: | :------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| 01/08/2022 |  0.1   | Criação do documento | [João Durso](https://github.com/jvsdurso), [Tomás Veloso](https://github.com/tomasvelos0), [Laís Ramos](https://github.com/laisramos123), [Igor Aragão](https://github.com/roginaldosemog) |
+|    Data    | Versão |       Descrição       |                                                                                           Autor                                                                                            |
+| :--------: | :----: | :-------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| 01/08/2022 |  0.1   | Criação do documento  | [João Durso](https://github.com/jvsdurso), [Tomás Veloso](https://github.com/tomasvelos0), [Laís Ramos](https://github.com/laisramos123), [Igor Aragão](https://github.com/roginaldosemog) |
+| 29/08/2022 |  0.2   | Atualizando DDL e DML |                                                                         [João Durso](https://github.com/jvsdurso)                                                                          |
 
 ## Sobre o SQL
 
