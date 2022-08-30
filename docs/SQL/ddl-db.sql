@@ -2,10 +2,10 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 14.4
--- Dumped by pg_dump version 14.4
+-- Dumped from database version 14.5
+-- Dumped by pg_dump version 14.5
 
--- Started on 2022-08-18 21:47:23
+-- Started on 2022-08-29 22:02:33
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -19,51 +19,61 @@ SET client_min_messages = warning;
 SET row_security = off;
 
 --
--- TOC entry 927 (class 1247 OID 16783)
+-- TOC entry 5 (class 2615 OID 16835)
+-- Name: replays; Type: SCHEMA; Schema: -; Owner: postgres
+--
+
+CREATE SCHEMA replays;
+
+
+ALTER SCHEMA replays OWNER TO postgres;
+
+--
+-- TOC entry 869 (class 1247 OID 16396)
 -- Name: pch; Type: DOMAIN; Schema: public; Owner: postgres
 --
 
 CREATE DOMAIN public.pch AS character varying(7)
-	CONSTRAINT pch_check CHECK (((VALUE)::text = ANY ((ARRAY['corpo'::character varying, 'cabeca'::character varying, 'pernas'::character varying, 'pes'::character varying])::text[])));
+	CONSTRAINT pch_check CHECK (((VALUE)::text = ANY (ARRAY[('corpo'::character varying)::text, ('cabeca'::character varying)::text, ('pernas'::character varying)::text, ('pes'::character varying)::text])));
 
 
 ALTER DOMAIN public.pch OWNER TO postgres;
 
 --
--- TOC entry 885 (class 1247 OID 16575)
+-- TOC entry 873 (class 1247 OID 16399)
 -- Name: tipocriatura; Type: DOMAIN; Schema: public; Owner: postgres
 --
 
 CREATE DOMAIN public.tipocriatura AS character varying(20)
-	CONSTRAINT tipocriatura_check CHECK (((VALUE)::text = ANY ((ARRAY['anfibios'::character varying, 'aquaticos'::character varying, 'aves'::character varying, 'bosses'::character varying, 'constructos'::character varying, 'criaturas_magicas'::character varying, 'demonios'::character varying, 'dragoes'::character varying, 'elementais'::character varying, 'extra_dimensionais'::character varying, 'fadas'::character varying, 'gigantes'::character varying, 'humanos'::character varying, 'humanoides'::character varying, 'imortais'::character varying, 'licantropos'::character varying, 'mamiferos'::character varying, 'mortos-vivos'::character varying, 'plantas'::character varying, 'repteis'::character varying, 'slimes'::character varying, 'the_ruthless_seven'::character varying, 'triangle_of_terror'::character varying, 'vermes'::character varying])::text[])));
+	CONSTRAINT tipocriatura_check CHECK (((VALUE)::text = ANY (ARRAY[('anfibios'::character varying)::text, ('aquaticos'::character varying)::text, ('aves'::character varying)::text, ('bosses'::character varying)::text, ('constructos'::character varying)::text, ('criaturas_magicas'::character varying)::text, ('demonios'::character varying)::text, ('dragoes'::character varying)::text, ('elementais'::character varying)::text, ('extra_dimensionais'::character varying)::text, ('fadas'::character varying)::text, ('gigantes'::character varying)::text, ('humanos'::character varying)::text, ('humanoides'::character varying)::text, ('imortais'::character varying)::text, ('licantropos'::character varying)::text, ('mamiferos'::character varying)::text, ('mortos-vivos'::character varying)::text, ('plantas'::character varying)::text, ('repteis'::character varying)::text, ('slimes'::character varying)::text, ('the_ruthless_seven'::character varying)::text, ('triangle_of_terror'::character varying)::text, ('vermes'::character varying)::text])));
 
 
 ALTER DOMAIN public.tipocriatura OWNER TO postgres;
 
 --
--- TOC entry 911 (class 1247 OID 16716)
+-- TOC entry 877 (class 1247 OID 16402)
 -- Name: tipoitem; Type: DOMAIN; Schema: public; Owner: postgres
 --
 
 CREATE DOMAIN public.tipoitem AS character varying(12)
-	CONSTRAINT tipoitem_check CHECK (((VALUE)::text = ANY ((ARRAY['armas'::character varying, 'equipamento'::character varying, 'mochila'::character varying, 'riqueza'::character varying, 'none'::character varying])::text[])));
+	CONSTRAINT tipoitem_check CHECK (((VALUE)::text = ANY (ARRAY[('armas'::character varying)::text, ('equipamento'::character varying)::text, ('mochila'::character varying)::text, ('riqueza'::character varying)::text, ('none'::character varying)::text])));
 
 
 ALTER DOMAIN public.tipoitem OWNER TO postgres;
 
 --
--- TOC entry 892 (class 1247 OID 16594)
+-- TOC entry 881 (class 1247 OID 16405)
 -- Name: tiponpc; Type: DOMAIN; Schema: public; Owner: postgres
 --
 
 CREATE DOMAIN public.tiponpc AS character varying(12)
-	CONSTRAINT tiponpc_check CHECK (((VALUE)::text = ANY ((ARRAY['comerciante'::character varying, 'guia'::character varying])::text[])));
+	CONSTRAINT tiponpc_check CHECK (((VALUE)::text = ANY (ARRAY[('comerciante'::character varying)::text, ('guia'::character varying)::text])));
 
 
 ALTER DOMAIN public.tiponpc OWNER TO postgres;
 
 --
--- TOC entry 871 (class 1247 OID 16530)
+-- TOC entry 885 (class 1247 OID 16408)
 -- Name: tipopersonagem; Type: DOMAIN; Schema: public; Owner: postgres
 --
 
@@ -74,22 +84,117 @@ CREATE DOMAIN public.tipopersonagem AS character(8)
 ALTER DOMAIN public.tipopersonagem OWNER TO postgres;
 
 --
--- TOC entry 878 (class 1247 OID 16547)
+-- TOC entry 889 (class 1247 OID 16411)
 -- Name: vocacao; Type: DOMAIN; Schema: public; Owner: postgres
 --
 
 CREATE DOMAIN public.vocacao AS character varying(12)
-	CONSTRAINT vocacao_check CHECK (((VALUE)::text = ANY ((ARRAY['cavaleiro'::character varying, 'feiticeiro'::character varying, 'paladino'::character varying, 'druida'::character varying, 'none'::character varying])::text[])));
+	CONSTRAINT vocacao_check CHECK (((VALUE)::text = ANY (ARRAY[('cavaleiro'::character varying)::text, ('feiticeiro'::character varying)::text, ('paladino'::character varying)::text, ('druida'::character varying)::text, ('none'::character varying)::text])));
 
 
 ALTER DOMAIN public.vocacao OWNER TO postgres;
+
+--
+-- TOC entry 266 (class 1255 OID 16883)
+-- Name: get_conta_idade(integer); Type: FUNCTION; Schema: public; Owner: postgres
+--
+
+CREATE FUNCTION public.get_conta_idade(_id_conta integer) RETURNS smallint
+    LANGUAGE plpgsql
+    AS $$  
+DECLARE
+	_idade SMALLINT;
+BEGIN
+  _idade := (SELECT EXTRACT(year FROM age(current_date, data_de_aniversario)) FROM conta WHERE id=_id_conta);
+  RETURN _idade;
+END;
+$$;
+
+
+ALTER FUNCTION public.get_conta_idade(_id_conta integer) OWNER TO postgres;
+
+--
+-- TOC entry 257 (class 1255 OID 16875)
+-- Name: valid_region_change(integer, integer, boolean, integer, smallint); Type: FUNCTION; Schema: public; Owner: postgres
+--
+
+CREATE FUNCTION public.valid_region_change(_id_posicao integer, _id_player integer, _vip_check boolean, _id_conta integer, _vip_dias smallint) RETURNS boolean
+    LANGUAGE plpgsql
+    AS $$
+DECLARE
+  _regiao_vip BOOLEAN;
+  _player_vip SMALLINT;
+  _permitido BOOLEAN;
+BEGIN
+  _regiao_vip := (SELECT r.vip_check FROM regiao r WHERE r.id = (SELECT p.id_regiao FROM localizao WHERE p.id = _id_posicao));
+  IF vip = FALSE THEN
+    _permitido := TRUE;
+  ELSE 
+    _player_vip := (SELECT d.vip_dias FROM conta d WHERE d.id = (SELECT c.id_conta FROM conta WHERE c.id = _id_conta));
+    IF _player_vip > 0 THEN
+      _permitido = TRUE;
+    ELSE
+      _permitido = FALSE;
+	END IF;
+  END IF;
+    RETURN _permitido;
+END;
+$$;
+
+
+ALTER FUNCTION public.valid_region_change(_id_posicao integer, _id_player integer, _vip_check boolean, _id_conta integer, _vip_dias smallint) OWNER TO postgres;
+
+--
+-- TOC entry 267 (class 1255 OID 16921)
+-- Name: verificar_limite_inventario(); Type: FUNCTION; Schema: public; Owner: postgres
+--
+
+CREATE FUNCTION public.verificar_limite_inventario() RETURNS trigger
+    LANGUAGE plpgsql
+    AS $$
+    DECLARE
+        capacidade_inventario INTEGER;
+		peso_item_atual INTEGER;
+        soma_peso_itens INTEGER;
+    BEGIN
+        SELECT capacidade INTO capacidade_inventario FROM inventario WHERE id_player = NEW.id_player;
+		
+        SELECT (COALESCE(soma_tot.peso_armas, 0) + COALESCE(soma_tot.peso_equip, 0) + COALESCE(soma_tot.peso_mochila, 0) + COALESCE(soma_tot.peso_riqueza, 0))
+			INTO soma_peso_itens FROM(
+				SELECT SUM(armas.peso) as peso_armas, SUM(equipamento.peso) as peso_equip, SUM(mochila.peso) as peso_mochila, SUM(riqueza.peso) as peso_riqueza 
+					FROM inventario_guarda_instancia_item 
+						LEFT JOIN instancia_item ON instancia_item.id = inventario_guarda_instancia_item.id_instancia_item 
+						LEFT JOIN armas ON armas.id = instancia_item.id_item 
+						LEFT JOIN equipamento ON equipamento.id = instancia_item.id_item 
+						LEFT JOIN mochila ON mochila.id = instancia_item.id_item
+						LEFT JOIN riqueza ON riqueza.id = instancia_item.id_item) 
+					as soma_tot;
+					
+		SELECT (COALESCE(armas.peso, 0) + COALESCE(equipamento.peso, 0) + COALESCE(mochila.peso, 0) + COALESCE(riqueza.peso, 0)) INTO peso_item_atual FROM instancia_item
+			LEFT JOIN armas ON armas.id = instancia_item.id_item 
+			LEFT JOIN equipamento ON equipamento.id = instancia_item.id_item 
+			LEFT JOIN mochila ON mochila.id = instancia_item.id_item
+			LEFT JOIN riqueza ON riqueza.id = instancia_item.id_item
+		WHERE instancia_item.id = NEW.id_instancia_item;
+		
+		RAISE NOTICE 'soma_peso_item := %', soma_peso_itens;
+		RAISE NOTICE 'capacidade := %', capacidade_inventario;
+        IF soma_peso_itens + peso_item_atual > capacidade_inventario THEN
+            RAISE EXCEPTION 'Peso máximo do inventário alcançado. Não é possível adicionar mais items.';
+        END IF;
+        RETURN NEW;
+    END;
+$$;
+
+
+ALTER FUNCTION public.verificar_limite_inventario() OWNER TO postgres;
 
 SET default_tablespace = '';
 
 SET default_table_access_method = heap;
 
 --
--- TOC entry 232 (class 1259 OID 16740)
+-- TOC entry 210 (class 1259 OID 16413)
 -- Name: armas; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -109,7 +214,7 @@ CREATE TABLE public.armas (
 ALTER TABLE public.armas OWNER TO postgres;
 
 --
--- TOC entry 245 (class 1259 OID 25183)
+-- TOC entry 211 (class 1259 OID 16418)
 -- Name: batalha; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -122,7 +227,7 @@ CREATE TABLE public.batalha (
 ALTER TABLE public.batalha OWNER TO postgres;
 
 --
--- TOC entry 244 (class 1259 OID 25182)
+-- TOC entry 212 (class 1259 OID 16421)
 -- Name: batalha_idbatalha_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -138,8 +243,8 @@ CREATE SEQUENCE public.batalha_idbatalha_seq
 ALTER TABLE public.batalha_idbatalha_seq OWNER TO postgres;
 
 --
--- TOC entry 3596 (class 0 OID 0)
--- Dependencies: 244
+-- TOC entry 3617 (class 0 OID 0)
+-- Dependencies: 212
 -- Name: batalha_idbatalha_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -147,7 +252,7 @@ ALTER SEQUENCE public.batalha_idbatalha_seq OWNED BY public.batalha.id;
 
 
 --
--- TOC entry 248 (class 1259 OID 25229)
+-- TOC entry 213 (class 1259 OID 16422)
 -- Name: batalha_pvc_cm; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -161,7 +266,7 @@ CREATE TABLE public.batalha_pvc_cm (
 ALTER TABLE public.batalha_pvc_cm OWNER TO postgres;
 
 --
--- TOC entry 249 (class 1259 OID 25249)
+-- TOC entry 214 (class 1259 OID 16425)
 -- Name: batalha_pvc_sm; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -175,7 +280,7 @@ CREATE TABLE public.batalha_pvc_sm (
 ALTER TABLE public.batalha_pvc_sm OWNER TO postgres;
 
 --
--- TOC entry 246 (class 1259 OID 25189)
+-- TOC entry 215 (class 1259 OID 16428)
 -- Name: batalha_pvp_cm; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -189,7 +294,7 @@ CREATE TABLE public.batalha_pvp_cm (
 ALTER TABLE public.batalha_pvp_cm OWNER TO postgres;
 
 --
--- TOC entry 247 (class 1259 OID 25209)
+-- TOC entry 216 (class 1259 OID 16431)
 -- Name: batalha_pvp_sm; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -203,7 +308,19 @@ CREATE TABLE public.batalha_pvp_sm (
 ALTER TABLE public.batalha_pvp_sm OWNER TO postgres;
 
 --
--- TOC entry 222 (class 1259 OID 16613)
+-- TOC entry 253 (class 1259 OID 16923)
+-- Name: capacidade_inventario; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.capacidade_inventario (
+    capacidade integer
+);
+
+
+ALTER TABLE public.capacidade_inventario OWNER TO postgres;
+
+--
+-- TOC entry 217 (class 1259 OID 16434)
 -- Name: conta; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -213,7 +330,7 @@ CREATE TABLE public.conta (
     nome character varying(50) NOT NULL,
     data_de_criacao timestamp with time zone,
     data_de_aniversario date NOT NULL,
-    genero character(7) NOT NULL,
+    genero character(10) NOT NULL,
     localidade character varying(50) NOT NULL,
     idade smallint,
     banimento boolean DEFAULT false NOT NULL,
@@ -225,7 +342,7 @@ CREATE TABLE public.conta (
 ALTER TABLE public.conta OWNER TO postgres;
 
 --
--- TOC entry 243 (class 1259 OID 17055)
+-- TOC entry 218 (class 1259 OID 16438)
 -- Name: conta_idconta_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -241,8 +358,8 @@ CREATE SEQUENCE public.conta_idconta_seq
 ALTER TABLE public.conta_idconta_seq OWNER TO postgres;
 
 --
--- TOC entry 3597 (class 0 OID 0)
--- Dependencies: 243
+-- TOC entry 3618 (class 0 OID 0)
+-- Dependencies: 218
 -- Name: conta_idconta_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -250,7 +367,7 @@ ALTER SEQUENCE public.conta_idconta_seq OWNED BY public.conta.id;
 
 
 --
--- TOC entry 219 (class 1259 OID 16578)
+-- TOC entry 219 (class 1259 OID 16439)
 -- Name: criatura; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -269,7 +386,7 @@ CREATE TABLE public.criatura (
 ALTER TABLE public.criatura OWNER TO postgres;
 
 --
--- TOC entry 218 (class 1259 OID 16577)
+-- TOC entry 220 (class 1259 OID 16444)
 -- Name: criatura_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -285,8 +402,8 @@ CREATE SEQUENCE public.criatura_id_seq
 ALTER TABLE public.criatura_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3598 (class 0 OID 0)
--- Dependencies: 218
+-- TOC entry 3619 (class 0 OID 0)
+-- Dependencies: 220
 -- Name: criatura_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -294,7 +411,7 @@ ALTER SEQUENCE public.criatura_id_seq OWNED BY public.criatura.id;
 
 
 --
--- TOC entry 235 (class 1259 OID 16785)
+-- TOC entry 221 (class 1259 OID 16445)
 -- Name: equipamento; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -305,16 +422,16 @@ CREATE TABLE public.equipamento (
     min_level smallint NOT NULL,
     bonus smallint NOT NULL,
     descricao text,
-    peso double precision NOT NULL,
     defesa integer NOT NULL,
-    pch public.pch NOT NULL
+    pch public.pch NOT NULL,
+    peso double precision NOT NULL
 );
 
 
 ALTER TABLE public.equipamento OWNER TO postgres;
 
 --
--- TOC entry 227 (class 1259 OID 16699)
+-- TOC entry 222 (class 1259 OID 16450)
 -- Name: guilda; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -331,7 +448,7 @@ CREATE TABLE public.guilda (
 ALTER TABLE public.guilda OWNER TO postgres;
 
 --
--- TOC entry 226 (class 1259 OID 16698)
+-- TOC entry 223 (class 1259 OID 16456)
 -- Name: guilda_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -347,8 +464,8 @@ CREATE SEQUENCE public.guilda_id_seq
 ALTER TABLE public.guilda_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3599 (class 0 OID 0)
--- Dependencies: 226
+-- TOC entry 3620 (class 0 OID 0)
+-- Dependencies: 223
 -- Name: guilda_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -356,7 +473,7 @@ ALTER SEQUENCE public.guilda_id_seq OWNED BY public.guilda.id;
 
 
 --
--- TOC entry 225 (class 1259 OID 16692)
+-- TOC entry 224 (class 1259 OID 16457)
 -- Name: habilidades; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -380,7 +497,7 @@ CREATE TABLE public.habilidades (
 ALTER TABLE public.habilidades OWNER TO postgres;
 
 --
--- TOC entry 239 (class 1259 OID 16887)
+-- TOC entry 225 (class 1259 OID 16461)
 -- Name: historico; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -395,7 +512,7 @@ CREATE TABLE public.historico (
 ALTER TABLE public.historico OWNER TO postgres;
 
 --
--- TOC entry 237 (class 1259 OID 16802)
+-- TOC entry 226 (class 1259 OID 16464)
 -- Name: instancia_criatura; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -408,7 +525,7 @@ CREATE TABLE public.instancia_criatura (
 ALTER TABLE public.instancia_criatura OWNER TO postgres;
 
 --
--- TOC entry 242 (class 1259 OID 16990)
+-- TOC entry 227 (class 1259 OID 16467)
 -- Name: instancia_criatura_carrega_instancia_item; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -421,20 +538,20 @@ CREATE TABLE public.instancia_criatura_carrega_instancia_item (
 ALTER TABLE public.instancia_criatura_carrega_instancia_item OWNER TO postgres;
 
 --
--- TOC entry 231 (class 1259 OID 16729)
+-- TOC entry 228 (class 1259 OID 16470)
 -- Name: instancia_item; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.instancia_item (
     id integer NOT NULL,
-    iditem integer NOT NULL
+    id_item integer NOT NULL
 );
 
 
 ALTER TABLE public.instancia_item OWNER TO postgres;
 
 --
--- TOC entry 236 (class 1259 OID 16801)
+-- TOC entry 229 (class 1259 OID 16473)
 -- Name: instanciacriatura_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -450,8 +567,8 @@ CREATE SEQUENCE public.instanciacriatura_id_seq
 ALTER TABLE public.instanciacriatura_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3600 (class 0 OID 0)
--- Dependencies: 236
+-- TOC entry 3621 (class 0 OID 0)
+-- Dependencies: 229
 -- Name: instanciacriatura_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -459,7 +576,7 @@ ALTER SEQUENCE public.instanciacriatura_id_seq OWNED BY public.instancia_criatur
 
 
 --
--- TOC entry 230 (class 1259 OID 16728)
+-- TOC entry 230 (class 1259 OID 16474)
 -- Name: instanciaitem_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -475,7 +592,7 @@ CREATE SEQUENCE public.instanciaitem_id_seq
 ALTER TABLE public.instanciaitem_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3601 (class 0 OID 0)
+-- TOC entry 3622 (class 0 OID 0)
 -- Dependencies: 230
 -- Name: instanciaitem_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
@@ -484,7 +601,7 @@ ALTER SEQUENCE public.instanciaitem_id_seq OWNED BY public.instancia_item.id;
 
 
 --
--- TOC entry 224 (class 1259 OID 16677)
+-- TOC entry 231 (class 1259 OID 16475)
 -- Name: inventario; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -498,27 +615,27 @@ CREATE TABLE public.inventario (
     mao_esq integer,
     fonte_de_luz integer,
     capacidade integer DEFAULT 410 NOT NULL,
-    idplayer integer NOT NULL
+    id_player integer NOT NULL
 );
 
 
 ALTER TABLE public.inventario OWNER TO postgres;
 
 --
--- TOC entry 238 (class 1259 OID 16813)
+-- TOC entry 232 (class 1259 OID 16479)
 -- Name: inventario_guarda_instancia_item; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.inventario_guarda_instancia_item (
-    idinstanciaitem integer,
-    idplayer integer NOT NULL
+    id_instancia_item integer NOT NULL,
+    id_player integer NOT NULL
 );
 
 
 ALTER TABLE public.inventario_guarda_instancia_item OWNER TO postgres;
 
 --
--- TOC entry 229 (class 1259 OID 16719)
+-- TOC entry 233 (class 1259 OID 16482)
 -- Name: item; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -531,7 +648,7 @@ CREATE TABLE public.item (
 ALTER TABLE public.item OWNER TO postgres;
 
 --
--- TOC entry 228 (class 1259 OID 16718)
+-- TOC entry 234 (class 1259 OID 16488)
 -- Name: item_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -547,8 +664,8 @@ CREATE SEQUENCE public.item_id_seq
 ALTER TABLE public.item_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3602 (class 0 OID 0)
--- Dependencies: 228
+-- TOC entry 3623 (class 0 OID 0)
+-- Dependencies: 234
 -- Name: item_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -556,7 +673,7 @@ ALTER SEQUENCE public.item_id_seq OWNED BY public.item.id;
 
 
 --
--- TOC entry 214 (class 1259 OID 16508)
+-- TOC entry 235 (class 1259 OID 16489)
 -- Name: localizacao; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -565,14 +682,14 @@ CREATE TABLE public.localizacao (
     posicao_x numeric DEFAULT 0 NOT NULL,
     posicao_y numeric DEFAULT 0 NOT NULL,
     posicao_z numeric DEFAULT 0 NOT NULL,
-    idregiao integer NOT NULL
+    id_regiao integer NOT NULL
 );
 
 
 ALTER TABLE public.localizacao OWNER TO postgres;
 
 --
--- TOC entry 213 (class 1259 OID 16507)
+-- TOC entry 236 (class 1259 OID 16497)
 -- Name: localizacao_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -588,8 +705,8 @@ CREATE SEQUENCE public.localizacao_id_seq
 ALTER TABLE public.localizacao_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3603 (class 0 OID 0)
--- Dependencies: 213
+-- TOC entry 3624 (class 0 OID 0)
+-- Dependencies: 236
 -- Name: localizacao_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -597,7 +714,7 @@ ALTER SEQUENCE public.localizacao_id_seq OWNED BY public.localizacao.id;
 
 
 --
--- TOC entry 210 (class 1259 OID 16483)
+-- TOC entry 237 (class 1259 OID 16498)
 -- Name: mapa; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -610,7 +727,7 @@ CREATE TABLE public.mapa (
 ALTER TABLE public.mapa OWNER TO postgres;
 
 --
--- TOC entry 209 (class 1259 OID 16482)
+-- TOC entry 238 (class 1259 OID 16501)
 -- Name: mapa_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -626,8 +743,8 @@ CREATE SEQUENCE public.mapa_id_seq
 ALTER TABLE public.mapa_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3604 (class 0 OID 0)
--- Dependencies: 209
+-- TOC entry 3625 (class 0 OID 0)
+-- Dependencies: 238
 -- Name: mapa_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -635,7 +752,7 @@ ALTER SEQUENCE public.mapa_id_seq OWNED BY public.mapa.id;
 
 
 --
--- TOC entry 234 (class 1259 OID 16768)
+-- TOC entry 239 (class 1259 OID 16502)
 -- Name: mochila; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -653,7 +770,7 @@ CREATE TABLE public.mochila (
 ALTER TABLE public.mochila OWNER TO postgres;
 
 --
--- TOC entry 221 (class 1259 OID 16597)
+-- TOC entry 240 (class 1259 OID 16507)
 -- Name: npc; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -668,7 +785,7 @@ CREATE TABLE public.npc (
 ALTER TABLE public.npc OWNER TO postgres;
 
 --
--- TOC entry 240 (class 1259 OID 16912)
+-- TOC entry 241 (class 1259 OID 16512)
 -- Name: npc_carrega_instancia_item; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -681,7 +798,7 @@ CREATE TABLE public.npc_carrega_instancia_item (
 ALTER TABLE public.npc_carrega_instancia_item OWNER TO postgres;
 
 --
--- TOC entry 220 (class 1259 OID 16596)
+-- TOC entry 242 (class 1259 OID 16515)
 -- Name: npc_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -697,8 +814,8 @@ CREATE SEQUENCE public.npc_id_seq
 ALTER TABLE public.npc_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3605 (class 0 OID 0)
--- Dependencies: 220
+-- TOC entry 3626 (class 0 OID 0)
+-- Dependencies: 242
 -- Name: npc_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -706,7 +823,7 @@ ALTER SEQUENCE public.npc_id_seq OWNED BY public.npc.id;
 
 
 --
--- TOC entry 216 (class 1259 OID 16533)
+-- TOC entry 243 (class 1259 OID 16516)
 -- Name: personagem; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -720,7 +837,7 @@ CREATE TABLE public.personagem (
 ALTER TABLE public.personagem OWNER TO postgres;
 
 --
--- TOC entry 215 (class 1259 OID 16532)
+-- TOC entry 244 (class 1259 OID 16521)
 -- Name: personagem_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -736,8 +853,8 @@ CREATE SEQUENCE public.personagem_id_seq
 ALTER TABLE public.personagem_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3606 (class 0 OID 0)
--- Dependencies: 215
+-- TOC entry 3627 (class 0 OID 0)
+-- Dependencies: 244
 -- Name: personagem_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -745,7 +862,7 @@ ALTER SEQUENCE public.personagem_id_seq OWNED BY public.personagem.id;
 
 
 --
--- TOC entry 217 (class 1259 OID 16550)
+-- TOC entry 245 (class 1259 OID 16522)
 -- Name: player; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -757,20 +874,20 @@ CREATE TABLE public.player (
     ultimo_login timestamp with time zone,
     mana_maxima smallint DEFAULT 60 NOT NULL,
     mana_atual smallint DEFAULT 60 NOT NULL,
-    genero character(7) NOT NULL,
+    genero character(10) NOT NULL,
     experiencia bigint DEFAULT 0 NOT NULL,
     idpersonagem integer NOT NULL,
     level smallint DEFAULT 0 NOT NULL,
     id integer NOT NULL,
     data_de_criacao timestamp with time zone NOT NULL,
-    idconta integer NOT NULL
+    id_conta integer NOT NULL
 );
 
 
 ALTER TABLE public.player OWNER TO postgres;
 
 --
--- TOC entry 223 (class 1259 OID 16646)
+-- TOC entry 246 (class 1259 OID 16534)
 -- Name: player_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -786,8 +903,8 @@ CREATE SEQUENCE public.player_id_seq
 ALTER TABLE public.player_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3607 (class 0 OID 0)
--- Dependencies: 223
+-- TOC entry 3628 (class 0 OID 0)
+-- Dependencies: 246
 -- Name: player_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -795,21 +912,35 @@ ALTER SEQUENCE public.player_id_seq OWNED BY public.player.id;
 
 
 --
--- TOC entry 212 (class 1259 OID 16495)
+-- TOC entry 251 (class 1259 OID 16848)
+-- Name: players_guilda; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.players_guilda (
+    id_guilda integer NOT NULL,
+    id_player integer NOT NULL
+);
+
+
+ALTER TABLE public.players_guilda OWNER TO postgres;
+
+--
+-- TOC entry 247 (class 1259 OID 16535)
 -- Name: regiao; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.regiao (
     id integer NOT NULL,
     vip_check boolean DEFAULT false NOT NULL,
-    idmapa integer NOT NULL
+    idmapa integer NOT NULL,
+    nome character varying(32) NOT NULL
 );
 
 
 ALTER TABLE public.regiao OWNER TO postgres;
 
 --
--- TOC entry 211 (class 1259 OID 16494)
+-- TOC entry 248 (class 1259 OID 16539)
 -- Name: regiao_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
 --
 
@@ -825,8 +956,8 @@ CREATE SEQUENCE public.regiao_id_seq
 ALTER TABLE public.regiao_id_seq OWNER TO postgres;
 
 --
--- TOC entry 3608 (class 0 OID 0)
--- Dependencies: 211
+-- TOC entry 3629 (class 0 OID 0)
+-- Dependencies: 248
 -- Name: regiao_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
@@ -834,7 +965,7 @@ ALTER SEQUENCE public.regiao_id_seq OWNED BY public.regiao.id;
 
 
 --
--- TOC entry 233 (class 1259 OID 16754)
+-- TOC entry 249 (class 1259 OID 16540)
 -- Name: riqueza; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -852,7 +983,19 @@ CREATE TABLE public.riqueza (
 ALTER TABLE public.riqueza OWNER TO postgres;
 
 --
--- TOC entry 241 (class 1259 OID 16927)
+-- TOC entry 252 (class 1259 OID 16914)
+-- Name: soma_peso_item; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.soma_peso_item (
+    peso_armas double precision
+);
+
+
+ALTER TABLE public.soma_peso_item OWNER TO postgres;
+
+--
+-- TOC entry 250 (class 1259 OID 16545)
 -- Name: vende; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -866,7 +1009,7 @@ CREATE TABLE public.vende (
 ALTER TABLE public.vende OWNER TO postgres;
 
 --
--- TOC entry 3336 (class 2604 OID 25186)
+-- TOC entry 3324 (class 2604 OID 16548)
 -- Name: batalha id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -874,7 +1017,7 @@ ALTER TABLE ONLY public.batalha ALTER COLUMN id SET DEFAULT nextval('public.bata
 
 
 --
--- TOC entry 3327 (class 2604 OID 17056)
+-- TOC entry 3326 (class 2604 OID 16549)
 -- Name: conta id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -882,7 +1025,7 @@ ALTER TABLE ONLY public.conta ALTER COLUMN id SET DEFAULT nextval('public.conta_
 
 
 --
--- TOC entry 3324 (class 2604 OID 16581)
+-- TOC entry 3327 (class 2604 OID 16550)
 -- Name: criatura id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -890,7 +1033,7 @@ ALTER TABLE ONLY public.criatura ALTER COLUMN id SET DEFAULT nextval('public.cri
 
 
 --
--- TOC entry 3330 (class 2604 OID 16702)
+-- TOC entry 3329 (class 2604 OID 16551)
 -- Name: guilda id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -898,7 +1041,7 @@ ALTER TABLE ONLY public.guilda ALTER COLUMN id SET DEFAULT nextval('public.guild
 
 
 --
--- TOC entry 3335 (class 2604 OID 16805)
+-- TOC entry 3331 (class 2604 OID 16552)
 -- Name: instancia_criatura id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -906,7 +1049,7 @@ ALTER TABLE ONLY public.instancia_criatura ALTER COLUMN id SET DEFAULT nextval('
 
 
 --
--- TOC entry 3334 (class 2604 OID 16732)
+-- TOC entry 3332 (class 2604 OID 16553)
 -- Name: instancia_item id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -914,7 +1057,7 @@ ALTER TABLE ONLY public.instancia_item ALTER COLUMN id SET DEFAULT nextval('publ
 
 
 --
--- TOC entry 3332 (class 2604 OID 16722)
+-- TOC entry 3335 (class 2604 OID 16554)
 -- Name: item id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -922,7 +1065,7 @@ ALTER TABLE ONLY public.item ALTER COLUMN id SET DEFAULT nextval('public.item_id
 
 
 --
--- TOC entry 3311 (class 2604 OID 16511)
+-- TOC entry 3339 (class 2604 OID 16555)
 -- Name: localizacao id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -930,7 +1073,7 @@ ALTER TABLE ONLY public.localizacao ALTER COLUMN id SET DEFAULT nextval('public.
 
 
 --
--- TOC entry 3308 (class 2604 OID 16486)
+-- TOC entry 3340 (class 2604 OID 16556)
 -- Name: mapa id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -938,7 +1081,7 @@ ALTER TABLE ONLY public.mapa ALTER COLUMN id SET DEFAULT nextval('public.mapa_id
 
 
 --
--- TOC entry 3325 (class 2604 OID 16600)
+-- TOC entry 3341 (class 2604 OID 16557)
 -- Name: npc id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -946,7 +1089,7 @@ ALTER TABLE ONLY public.npc ALTER COLUMN id SET DEFAULT nextval('public.npc_id_s
 
 
 --
--- TOC entry 3315 (class 2604 OID 16536)
+-- TOC entry 3342 (class 2604 OID 16558)
 -- Name: personagem id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -954,7 +1097,7 @@ ALTER TABLE ONLY public.personagem ALTER COLUMN id SET DEFAULT nextval('public.p
 
 
 --
--- TOC entry 3323 (class 2604 OID 16647)
+-- TOC entry 3350 (class 2604 OID 16559)
 -- Name: player id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -962,7 +1105,7 @@ ALTER TABLE ONLY public.player ALTER COLUMN id SET DEFAULT nextval('public.playe
 
 
 --
--- TOC entry 3309 (class 2604 OID 16498)
+-- TOC entry 3352 (class 2604 OID 16560)
 -- Name: regiao id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -970,7 +1113,7 @@ ALTER TABLE ONLY public.regiao ALTER COLUMN id SET DEFAULT nextval('public.regia
 
 
 --
--- TOC entry 3378 (class 2606 OID 16748)
+-- TOC entry 3354 (class 2606 OID 16562)
 -- Name: armas armas_nome_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -979,7 +1122,7 @@ ALTER TABLE ONLY public.armas
 
 
 --
--- TOC entry 3380 (class 2606 OID 16746)
+-- TOC entry 3356 (class 2606 OID 16564)
 -- Name: armas armas_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -988,7 +1131,7 @@ ALTER TABLE ONLY public.armas
 
 
 --
--- TOC entry 3406 (class 2606 OID 25188)
+-- TOC entry 3358 (class 2606 OID 16566)
 -- Name: batalha batalha_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -997,7 +1140,7 @@ ALTER TABLE ONLY public.batalha
 
 
 --
--- TOC entry 3412 (class 2606 OID 25233)
+-- TOC entry 3360 (class 2606 OID 16568)
 -- Name: batalha_pvc_cm batalha_pvc_cm_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1006,7 +1149,7 @@ ALTER TABLE ONLY public.batalha_pvc_cm
 
 
 --
--- TOC entry 3414 (class 2606 OID 25253)
+-- TOC entry 3362 (class 2606 OID 16570)
 -- Name: batalha_pvc_sm batalha_pvc_sm_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1015,7 +1158,7 @@ ALTER TABLE ONLY public.batalha_pvc_sm
 
 
 --
--- TOC entry 3408 (class 2606 OID 25193)
+-- TOC entry 3364 (class 2606 OID 16572)
 -- Name: batalha_pvp_cm batalha_pvp_cm_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1024,7 +1167,7 @@ ALTER TABLE ONLY public.batalha_pvp_cm
 
 
 --
--- TOC entry 3410 (class 2606 OID 25213)
+-- TOC entry 3366 (class 2606 OID 16574)
 -- Name: batalha_pvp_sm batalha_pvp_sm_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1033,7 +1176,7 @@ ALTER TABLE ONLY public.batalha_pvp_sm
 
 
 --
--- TOC entry 3360 (class 2606 OID 25272)
+-- TOC entry 3368 (class 2606 OID 16576)
 -- Name: conta conta_email_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1042,7 +1185,7 @@ ALTER TABLE ONLY public.conta
 
 
 --
--- TOC entry 3362 (class 2606 OID 17063)
+-- TOC entry 3370 (class 2606 OID 16578)
 -- Name: conta conta_id_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1051,7 +1194,7 @@ ALTER TABLE ONLY public.conta
 
 
 --
--- TOC entry 3364 (class 2606 OID 25270)
+-- TOC entry 3372 (class 2606 OID 16580)
 -- Name: conta conta_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1060,7 +1203,7 @@ ALTER TABLE ONLY public.conta
 
 
 --
--- TOC entry 3352 (class 2606 OID 16587)
+-- TOC entry 3374 (class 2606 OID 16582)
 -- Name: criatura criatura_nome_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1069,7 +1212,7 @@ ALTER TABLE ONLY public.criatura
 
 
 --
--- TOC entry 3354 (class 2606 OID 16585)
+-- TOC entry 3376 (class 2606 OID 16584)
 -- Name: criatura criatura_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1078,7 +1221,7 @@ ALTER TABLE ONLY public.criatura
 
 
 --
--- TOC entry 3390 (class 2606 OID 16793)
+-- TOC entry 3378 (class 2606 OID 16586)
 -- Name: equipamento equipamento_nome_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1087,7 +1230,7 @@ ALTER TABLE ONLY public.equipamento
 
 
 --
--- TOC entry 3392 (class 2606 OID 16791)
+-- TOC entry 3380 (class 2606 OID 16588)
 -- Name: equipamento equipamento_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1096,7 +1239,7 @@ ALTER TABLE ONLY public.equipamento
 
 
 --
--- TOC entry 3370 (class 2606 OID 16709)
+-- TOC entry 3382 (class 2606 OID 16590)
 -- Name: guilda guilda_nome_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1105,7 +1248,7 @@ ALTER TABLE ONLY public.guilda
 
 
 --
--- TOC entry 3372 (class 2606 OID 16707)
+-- TOC entry 3384 (class 2606 OID 16592)
 -- Name: guilda guilda_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1114,7 +1257,7 @@ ALTER TABLE ONLY public.guilda
 
 
 --
--- TOC entry 3368 (class 2606 OID 16697)
+-- TOC entry 3386 (class 2606 OID 16594)
 -- Name: habilidades habilidades_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1123,7 +1266,7 @@ ALTER TABLE ONLY public.habilidades
 
 
 --
--- TOC entry 3398 (class 2606 OID 25289)
+-- TOC entry 3388 (class 2606 OID 16596)
 -- Name: historico historico_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1132,7 +1275,7 @@ ALTER TABLE ONLY public.historico
 
 
 --
--- TOC entry 3404 (class 2606 OID 16994)
+-- TOC entry 3392 (class 2606 OID 16598)
 -- Name: instancia_criatura_carrega_instancia_item instancia_criatura_carrega_instancia_item_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1141,7 +1284,7 @@ ALTER TABLE ONLY public.instancia_criatura_carrega_instancia_item
 
 
 --
--- TOC entry 3394 (class 2606 OID 16807)
+-- TOC entry 3390 (class 2606 OID 16600)
 -- Name: instancia_criatura instanciacriatura_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1150,7 +1293,7 @@ ALTER TABLE ONLY public.instancia_criatura
 
 
 --
--- TOC entry 3376 (class 2606 OID 16734)
+-- TOC entry 3394 (class 2606 OID 16602)
 -- Name: instancia_item instanciaitem_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1159,25 +1302,25 @@ ALTER TABLE ONLY public.instancia_item
 
 
 --
--- TOC entry 3396 (class 2606 OID 25296)
+-- TOC entry 3398 (class 2606 OID 16913)
 -- Name: inventario_guarda_instancia_item inventario_guarda_instancia_item_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.inventario_guarda_instancia_item
-    ADD CONSTRAINT inventario_guarda_instancia_item_pkey PRIMARY KEY (idplayer);
+    ADD CONSTRAINT inventario_guarda_instancia_item_pkey PRIMARY KEY (id_player, id_instancia_item);
 
 
 --
--- TOC entry 3366 (class 2606 OID 25274)
+-- TOC entry 3396 (class 2606 OID 16606)
 -- Name: inventario inventario_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.inventario
-    ADD CONSTRAINT inventario_pkey PRIMARY KEY (idplayer);
+    ADD CONSTRAINT inventario_pkey PRIMARY KEY (id_player);
 
 
 --
--- TOC entry 3374 (class 2606 OID 16727)
+-- TOC entry 3400 (class 2606 OID 16608)
 -- Name: item item_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1186,7 +1329,7 @@ ALTER TABLE ONLY public.item
 
 
 --
--- TOC entry 3342 (class 2606 OID 16518)
+-- TOC entry 3402 (class 2606 OID 16610)
 -- Name: localizacao localizacao_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1195,7 +1338,7 @@ ALTER TABLE ONLY public.localizacao
 
 
 --
--- TOC entry 3338 (class 2606 OID 16488)
+-- TOC entry 3404 (class 2606 OID 16612)
 -- Name: mapa mapa_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1204,7 +1347,7 @@ ALTER TABLE ONLY public.mapa
 
 
 --
--- TOC entry 3386 (class 2606 OID 16776)
+-- TOC entry 3406 (class 2606 OID 16614)
 -- Name: mochila mochila_nome_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1213,7 +1356,7 @@ ALTER TABLE ONLY public.mochila
 
 
 --
--- TOC entry 3388 (class 2606 OID 16774)
+-- TOC entry 3408 (class 2606 OID 16616)
 -- Name: mochila mochila_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1222,7 +1365,7 @@ ALTER TABLE ONLY public.mochila
 
 
 --
--- TOC entry 3400 (class 2606 OID 16916)
+-- TOC entry 3414 (class 2606 OID 16618)
 -- Name: npc_carrega_instancia_item npc_carrega_instancia_item_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1231,7 +1374,7 @@ ALTER TABLE ONLY public.npc_carrega_instancia_item
 
 
 --
--- TOC entry 3356 (class 2606 OID 16606)
+-- TOC entry 3410 (class 2606 OID 16620)
 -- Name: npc npc_nome_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1240,7 +1383,7 @@ ALTER TABLE ONLY public.npc
 
 
 --
--- TOC entry 3358 (class 2606 OID 16604)
+-- TOC entry 3412 (class 2606 OID 16622)
 -- Name: npc npc_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1249,7 +1392,7 @@ ALTER TABLE ONLY public.npc
 
 
 --
--- TOC entry 3344 (class 2606 OID 16540)
+-- TOC entry 3416 (class 2606 OID 16624)
 -- Name: personagem personagem_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1258,7 +1401,7 @@ ALTER TABLE ONLY public.personagem
 
 
 --
--- TOC entry 3346 (class 2606 OID 16675)
+-- TOC entry 3418 (class 2606 OID 16626)
 -- Name: player player_id_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1267,7 +1410,7 @@ ALTER TABLE ONLY public.player
 
 
 --
--- TOC entry 3348 (class 2606 OID 16567)
+-- TOC entry 3420 (class 2606 OID 16628)
 -- Name: player player_nome_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1276,7 +1419,7 @@ ALTER TABLE ONLY public.player
 
 
 --
--- TOC entry 3350 (class 2606 OID 25285)
+-- TOC entry 3422 (class 2606 OID 16630)
 -- Name: player player_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1285,7 +1428,16 @@ ALTER TABLE ONLY public.player
 
 
 --
--- TOC entry 3340 (class 2606 OID 16501)
+-- TOC entry 3432 (class 2606 OID 16852)
+-- Name: players_guilda players_guilda_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.players_guilda
+    ADD CONSTRAINT players_guilda_pkey PRIMARY KEY (id_guilda);
+
+
+--
+-- TOC entry 3424 (class 2606 OID 16632)
 -- Name: regiao regiao_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1294,7 +1446,7 @@ ALTER TABLE ONLY public.regiao
 
 
 --
--- TOC entry 3382 (class 2606 OID 16762)
+-- TOC entry 3426 (class 2606 OID 16634)
 -- Name: riqueza riqueza_nome_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1303,7 +1455,7 @@ ALTER TABLE ONLY public.riqueza
 
 
 --
--- TOC entry 3384 (class 2606 OID 16760)
+-- TOC entry 3428 (class 2606 OID 16636)
 -- Name: riqueza riqueza_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1312,7 +1464,7 @@ ALTER TABLE ONLY public.riqueza
 
 
 --
--- TOC entry 3402 (class 2606 OID 16931)
+-- TOC entry 3430 (class 2606 OID 16638)
 -- Name: vende vende_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1321,7 +1473,15 @@ ALTER TABLE ONLY public.vende
 
 
 --
--- TOC entry 3426 (class 2606 OID 16749)
+-- TOC entry 3472 (class 2620 OID 16922)
+-- Name: inventario_guarda_instancia_item trigger_verificar_limite_inventario; Type: TRIGGER; Schema: public; Owner: postgres
+--
+
+CREATE TRIGGER trigger_verificar_limite_inventario BEFORE INSERT ON public.inventario_guarda_instancia_item FOR EACH ROW EXECUTE FUNCTION public.verificar_limite_inventario();
+
+
+--
+-- TOC entry 3433 (class 2606 OID 16639)
 -- Name: armas armas_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1330,7 +1490,7 @@ ALTER TABLE ONLY public.armas
 
 
 --
--- TOC entry 3446 (class 2606 OID 25234)
+-- TOC entry 3434 (class 2606 OID 16644)
 -- Name: batalha_pvc_cm batalha_pvc_cm_idbatalha_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1339,7 +1499,7 @@ ALTER TABLE ONLY public.batalha_pvc_cm
 
 
 --
--- TOC entry 3447 (class 2606 OID 25244)
+-- TOC entry 3435 (class 2606 OID 16649)
 -- Name: batalha_pvc_cm batalha_pvc_cm_idinstcriatura_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1348,7 +1508,7 @@ ALTER TABLE ONLY public.batalha_pvc_cm
 
 
 --
--- TOC entry 3448 (class 2606 OID 25239)
+-- TOC entry 3436 (class 2606 OID 16654)
 -- Name: batalha_pvc_cm batalha_pvc_cm_idplayer_morto_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1357,7 +1517,7 @@ ALTER TABLE ONLY public.batalha_pvc_cm
 
 
 --
--- TOC entry 3449 (class 2606 OID 25254)
+-- TOC entry 3437 (class 2606 OID 16659)
 -- Name: batalha_pvc_sm batalha_pvc_sm_idbatalha_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1366,7 +1526,7 @@ ALTER TABLE ONLY public.batalha_pvc_sm
 
 
 --
--- TOC entry 3450 (class 2606 OID 25264)
+-- TOC entry 3438 (class 2606 OID 16664)
 -- Name: batalha_pvc_sm batalha_pvc_sm_idinstcriatura_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1375,7 +1535,7 @@ ALTER TABLE ONLY public.batalha_pvc_sm
 
 
 --
--- TOC entry 3451 (class 2606 OID 25259)
+-- TOC entry 3439 (class 2606 OID 16669)
 -- Name: batalha_pvc_sm batalha_pvc_sm_idplayer_morto_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1384,7 +1544,7 @@ ALTER TABLE ONLY public.batalha_pvc_sm
 
 
 --
--- TOC entry 3440 (class 2606 OID 25194)
+-- TOC entry 3440 (class 2606 OID 16674)
 -- Name: batalha_pvp_cm batalha_pvp_cm_idbatalha_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1393,7 +1553,7 @@ ALTER TABLE ONLY public.batalha_pvp_cm
 
 
 --
--- TOC entry 3441 (class 2606 OID 25199)
+-- TOC entry 3441 (class 2606 OID 16679)
 -- Name: batalha_pvp_cm batalha_pvp_cm_idplayer_morto_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1402,7 +1562,7 @@ ALTER TABLE ONLY public.batalha_pvp_cm
 
 
 --
--- TOC entry 3442 (class 2606 OID 25204)
+-- TOC entry 3442 (class 2606 OID 16684)
 -- Name: batalha_pvp_cm batalha_pvp_cm_idplayer_vivo_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1411,7 +1571,7 @@ ALTER TABLE ONLY public.batalha_pvp_cm
 
 
 --
--- TOC entry 3443 (class 2606 OID 25214)
+-- TOC entry 3443 (class 2606 OID 16689)
 -- Name: batalha_pvp_sm batalha_pvp_sm_idbatalha_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1420,7 +1580,7 @@ ALTER TABLE ONLY public.batalha_pvp_sm
 
 
 --
--- TOC entry 3444 (class 2606 OID 25219)
+-- TOC entry 3444 (class 2606 OID 16694)
 -- Name: batalha_pvp_sm batalha_pvp_sm_idplayer_morto_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1429,7 +1589,7 @@ ALTER TABLE ONLY public.batalha_pvp_sm
 
 
 --
--- TOC entry 3445 (class 2606 OID 25224)
+-- TOC entry 3445 (class 2606 OID 16699)
 -- Name: batalha_pvp_sm batalha_pvp_sm_idplayer_vivo_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1438,7 +1598,7 @@ ALTER TABLE ONLY public.batalha_pvp_sm
 
 
 --
--- TOC entry 3420 (class 2606 OID 16588)
+-- TOC entry 3446 (class 2606 OID 16704)
 -- Name: criatura criatura_idpersonagem_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1447,7 +1607,7 @@ ALTER TABLE ONLY public.criatura
 
 
 --
--- TOC entry 3429 (class 2606 OID 16794)
+-- TOC entry 3447 (class 2606 OID 16709)
 -- Name: equipamento equipamento_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1456,7 +1616,7 @@ ALTER TABLE ONLY public.equipamento
 
 
 --
--- TOC entry 3424 (class 2606 OID 16710)
+-- TOC entry 3448 (class 2606 OID 16714)
 -- Name: guilda guilda_id_dono_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1465,7 +1625,7 @@ ALTER TABLE ONLY public.guilda
 
 
 --
--- TOC entry 3423 (class 2606 OID 17005)
+-- TOC entry 3449 (class 2606 OID 16719)
 -- Name: habilidades habilidades_nomeplayer_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1474,7 +1634,7 @@ ALTER TABLE ONLY public.habilidades
 
 
 --
--- TOC entry 3433 (class 2606 OID 25290)
+-- TOC entry 3450 (class 2606 OID 16724)
 -- Name: historico historico_idplayermorto_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1483,7 +1643,7 @@ ALTER TABLE ONLY public.historico
 
 
 --
--- TOC entry 3438 (class 2606 OID 16995)
+-- TOC entry 3452 (class 2606 OID 16729)
 -- Name: instancia_criatura_carrega_instancia_item instancia_criatura_carrega_instancia_i_idinstanciacriatura_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1492,7 +1652,7 @@ ALTER TABLE ONLY public.instancia_criatura_carrega_instancia_item
 
 
 --
--- TOC entry 3439 (class 2606 OID 17000)
+-- TOC entry 3453 (class 2606 OID 16734)
 -- Name: instancia_criatura_carrega_instancia_item instancia_criatura_carrega_instancia_item_idinstanciaitem_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1501,7 +1661,7 @@ ALTER TABLE ONLY public.instancia_criatura_carrega_instancia_item
 
 
 --
--- TOC entry 3430 (class 2606 OID 16808)
+-- TOC entry 3451 (class 2606 OID 16739)
 -- Name: instancia_criatura instanciacriatura_idcriatura_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1510,52 +1670,52 @@ ALTER TABLE ONLY public.instancia_criatura
 
 
 --
--- TOC entry 3425 (class 2606 OID 16735)
+-- TOC entry 3454 (class 2606 OID 16744)
 -- Name: instancia_item instanciaitem_iditem_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.instancia_item
-    ADD CONSTRAINT instanciaitem_iditem_fkey FOREIGN KEY (iditem) REFERENCES public.item(id);
+    ADD CONSTRAINT instanciaitem_iditem_fkey FOREIGN KEY (id_item) REFERENCES public.item(id);
 
 
 --
--- TOC entry 3432 (class 2606 OID 25297)
--- Name: inventario_guarda_instancia_item inventario_guarda_instancia_item_idplayer_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- TOC entry 3457 (class 2606 OID 16902)
+-- Name: inventario_guarda_instancia_item inventario_guarda_instancia_item_id_player_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.inventario_guarda_instancia_item
-    ADD CONSTRAINT inventario_guarda_instancia_item_idplayer_fkey FOREIGN KEY (idplayer) REFERENCES public.player(id);
+    ADD CONSTRAINT inventario_guarda_instancia_item_id_player_fkey FOREIGN KEY (id_player) REFERENCES public.player(id);
 
 
 --
--- TOC entry 3422 (class 2606 OID 16683)
--- Name: inventario inventario_idplayer_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+-- TOC entry 3455 (class 2606 OID 16907)
+-- Name: inventario inventario_id_player_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.inventario
-    ADD CONSTRAINT inventario_idplayer_fkey FOREIGN KEY (idplayer) REFERENCES public.player(id);
+    ADD CONSTRAINT inventario_id_player_fkey FOREIGN KEY (id_player) REFERENCES public.player(id);
 
 
 --
--- TOC entry 3431 (class 2606 OID 16821)
+-- TOC entry 3456 (class 2606 OID 16759)
 -- Name: inventario_guarda_instancia_item inventarioguardainstanciaitem_idinstanciaitem_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.inventario_guarda_instancia_item
-    ADD CONSTRAINT inventarioguardainstanciaitem_idinstanciaitem_fkey FOREIGN KEY (idinstanciaitem) REFERENCES public.instancia_item(id);
+    ADD CONSTRAINT inventarioguardainstanciaitem_idinstanciaitem_fkey FOREIGN KEY (id_instancia_item) REFERENCES public.instancia_item(id);
 
 
 --
--- TOC entry 3416 (class 2606 OID 16519)
+-- TOC entry 3458 (class 2606 OID 16764)
 -- Name: localizacao localizacao_idregiao_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.localizacao
-    ADD CONSTRAINT localizacao_idregiao_fkey FOREIGN KEY (idregiao) REFERENCES public.regiao(id);
+    ADD CONSTRAINT localizacao_idregiao_fkey FOREIGN KEY (id_regiao) REFERENCES public.regiao(id);
 
 
 --
--- TOC entry 3428 (class 2606 OID 16777)
+-- TOC entry 3459 (class 2606 OID 16769)
 -- Name: mochila mochila_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1564,7 +1724,7 @@ ALTER TABLE ONLY public.mochila
 
 
 --
--- TOC entry 3434 (class 2606 OID 16922)
+-- TOC entry 3461 (class 2606 OID 16774)
 -- Name: npc_carrega_instancia_item npc_carrega_instancia_item_idinstanciaitem_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1573,7 +1733,7 @@ ALTER TABLE ONLY public.npc_carrega_instancia_item
 
 
 --
--- TOC entry 3435 (class 2606 OID 16917)
+-- TOC entry 3462 (class 2606 OID 16779)
 -- Name: npc_carrega_instancia_item npc_carrega_instancia_item_idnpc_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1582,7 +1742,7 @@ ALTER TABLE ONLY public.npc_carrega_instancia_item
 
 
 --
--- TOC entry 3421 (class 2606 OID 16607)
+-- TOC entry 3460 (class 2606 OID 16784)
 -- Name: npc npc_idpersonagem_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1591,7 +1751,7 @@ ALTER TABLE ONLY public.npc
 
 
 --
--- TOC entry 3417 (class 2606 OID 16541)
+-- TOC entry 3463 (class 2606 OID 16789)
 -- Name: personagem personagem_idlocalizacao_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1600,16 +1760,16 @@ ALTER TABLE ONLY public.personagem
 
 
 --
--- TOC entry 3419 (class 2606 OID 17064)
+-- TOC entry 3464 (class 2606 OID 16794)
 -- Name: player player_idconta_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.player
-    ADD CONSTRAINT player_idconta_fkey FOREIGN KEY (idconta) REFERENCES public.conta(id);
+    ADD CONSTRAINT player_idconta_fkey FOREIGN KEY (id_conta) REFERENCES public.conta(id);
 
 
 --
--- TOC entry 3418 (class 2606 OID 16568)
+-- TOC entry 3465 (class 2606 OID 16799)
 -- Name: player player_idpersonagem_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1618,7 +1778,25 @@ ALTER TABLE ONLY public.player
 
 
 --
--- TOC entry 3415 (class 2606 OID 16502)
+-- TOC entry 3470 (class 2606 OID 16853)
+-- Name: players_guilda players_guilda_id_guilda_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.players_guilda
+    ADD CONSTRAINT players_guilda_id_guilda_fkey FOREIGN KEY (id_guilda) REFERENCES public.guilda(id);
+
+
+--
+-- TOC entry 3471 (class 2606 OID 16858)
+-- Name: players_guilda players_guilda_id_player_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.players_guilda
+    ADD CONSTRAINT players_guilda_id_player_fkey FOREIGN KEY (id_player) REFERENCES public.player(id);
+
+
+--
+-- TOC entry 3466 (class 2606 OID 16804)
 -- Name: regiao regiao_idmapa_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1627,7 +1805,7 @@ ALTER TABLE ONLY public.regiao
 
 
 --
--- TOC entry 3427 (class 2606 OID 16763)
+-- TOC entry 3467 (class 2606 OID 16809)
 -- Name: riqueza riqueza_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1636,7 +1814,7 @@ ALTER TABLE ONLY public.riqueza
 
 
 --
--- TOC entry 3436 (class 2606 OID 16932)
+-- TOC entry 3468 (class 2606 OID 16814)
 -- Name: vende vende_idnpc_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1645,7 +1823,7 @@ ALTER TABLE ONLY public.vende
 
 
 --
--- TOC entry 3437 (class 2606 OID 16937)
+-- TOC entry 3469 (class 2606 OID 16819)
 -- Name: vende vende_nomeplayer_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -1653,8 +1831,9 @@ ALTER TABLE ONLY public.vende
     ADD CONSTRAINT vende_nomeplayer_fkey FOREIGN KEY (nomeplayer) REFERENCES public.player(nome);
 
 
--- Completed on 2022-08-18 21:47:24
+-- Completed on 2022-08-29 22:02:34
 
 --
 -- PostgreSQL database dump complete
 --
+
