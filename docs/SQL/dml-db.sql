@@ -147,66 +147,67 @@ INSERT INTO conta (senha, vip_dias, email, nome, localidade, banimento, data_de_
 ('1592648' , 0, 'mariana.silva@email.com', 'Mariana Silva', 'Brasil', DEFAULT, '28/07/2022', '26/01/1992' , 'Feminino'), 
 ('951847623' , 30, 'larrisa.cristina@email.com', 'Larrisa Cristina', 'Brasil', DEFAULT, '28/07/2022', '01/02/1991' , 'Feminino');
 
-INSERT INTO personagem (tipo, idlocalizacao) VALUES
-('criatura', '11'), 
-('criatura', '16'), 
-('criatura', '21'), 
-('criatura', '26'), 
-('criatura', '31'), 
-('criatura', '36'), 
-('criatura', '41'), 
-('criatura', '46'), 
-('criatura', '51'), 
-('criatura', '56'), 
-('criatura', '61'), 
-('criatura', '66'), 
-('criatura', '71'),
-('criatura', '76'),
-('criatura', '81'),
-('npc', '25'), 
-('npc', '50'), 
-('npc', '75'), 
-('npc', '100'), 
-('npc', '125'),
+INSERT INTO personagem (tipo, id) VALUES
 ('player', '1'),
 ('player', '2'),
 ('player', '2'),
 ('player', '3'),
 ('player', '4'),
 ('player', '5');
+('criatura', '6'), 
+('criatura', '7'), 
+('criatura', '8'), 
+('criatura', '9'), 
+('criatura', '10'), 
+('criatura', '11'), 
+('criatura', '12'), 
+('criatura', '13'), 
+('criatura', '14'), 
+('criatura', '15'), 
+('criatura', '16'), 
+('criatura', '17'), 
+('criatura', '18'),
+('criatura', '19'),
+('criatura', '20'),
+('npc', '21'), 
+('npc', '22'), 
+('npc', '23'), 
+('npc', '24'), 
+('npc', '25'),
 
-INSERT INTO player (nome, vocacao, vida_maxima, vida_atual, mana_maxima, mana_atual, genero, experiencia, idpersonagem, data_de_criacao, id_conta) VALUES
-('Druid Lcs', 'druida', 100, 100, 200, 200, 'masculino', 0, 21, '25/07/2022', 1),
-('Fer Cavaleiro', 'cavaleiro', 150, 150, 100, 100, 'masculino', 0, 22, '25/07/2022', 2),
-('Paladino Jose', 'paladino', 130, 130, 130, 130, 'masculino', 0, 23, '25/07/2022', 3),
-('Feiticeira Fer', 'feiticeiro', 100, 100, 200, 200, 'feminino', 0, 24, '25/07/2022', 4),
-('Mariana Cavaleira', 'cavaleiro', 150, 150, 100, 100, 'feminino', 0, 25, '25/07/2022', 5),
-('Larrissa Druida', 'druida', 100, 100, 200, 200, 'feminino', 0, 26, '25/07/2022', 6);
+
+INSERT INTO player (id, nome, vocacao, vida_maxima, vida_atual, mana_maxima, mana_atual, genero, experiencia, data_de_criacao, id_conta, id_localizacao, riqueza) VALUES
+(1, 'Druid Lcs', 'druida', 100, 100, 200, 200, 'masculino', 0, '25/07/2022', 1),
+(2, 'Fer Cavaleiro', 'cavaleiro', 150, 150, 100, 100, 'masculino', 0, '25/07/2022', 2),
+(3, 'Paladino Jose', 'paladino', 130, 130, 130, 130, 'masculino', 0, '25/07/2022', 3),
+(4, 'Feiticeira Fer', 'feiticeiro', 100, 100, 200, 200, 'feminino', 0, '25/07/2022', 4),
+(5, 'Mariana Cavaleira', 'cavaleiro', 150, 150, 100, 100, 'feminino', 0, '25/07/2022', 5),
+(6, 'Larrissa Druida', 'druida', 100, 100, 200, 200, 'feminino', 0, '25/07/2022', 6);
 
 
-INSERT INTO npc (nome, tipo, idpersonagem) VALUES
-('Rashid', 'comerciante', 16),	
-('Vega', 'comerciante', 17),	
-('Travora', 'comerciante', 18),	
-('Yasir', 'guia', 19),	
-('Ashtamor', 'guia', 20);
+INSERT INTO npc (id, nome, tipo) VALUES
+(21, 'Rashid', 'comerciante'),	
+(22, 'Vega', 'comerciante'),	
+(23, 'Travora', 'comerciante'),	
+(24, 'Yasir', 'guia'),	
+(25, 'Ashtamor', 'guia');
 
-INSERT INTO criatura (nome, ataque, vida, experiencia, defesa, tipo, idpersonagem) VALUES
-('Badger', 2, 23, 5, 5, 'mamiferos', 1),
-('Bat', 5, 30, 10, 8, 'mamiferos', 2),
-('Bear', 12, 80, 23, 10, 'mamiferos', 3),
-('Deer', 3, 24, 1, 6, 'mamiferos', 4),
-('Elephant', 16, 320, 160, 15, 'mamiferos', 5),
-('Gloom Wolf', 10, 200, 70, 9, 'mamiferos', 6),
-('Lion', 13, 80, 30, 9, 'mamiferos', 7),
-('Mammoth', 20, 320, 160, 17, 'mamiferos', 8),
-('Polar Bear', 13, 85, 28, 11, 'mamiferos', 9),
-('Tiger', 10, 75, 40, 10, 'mamiferos', 10),
-('White Lion', 140, 2700, 2300, 120, 'mamiferos', 11),
-('Winter Wolf', 12, 30, 20, 10, 'mamiferos', 12),
-('Yeti', 100, 950, 460, 95, 'mamiferos', 13),
-('Parder', 200, 950, 2900, 180, 'mamiferos', 14),
-('Water Buffalo', 15, 390, 20, 15, 'mamiferos', 15);
+INSERT INTO criatura (nome, ataque, vida, experiencia, defesa, tipo, id) VALUES
+('Badger', 2, 23, 5, 5, 'mamiferos', 6),
+('Bat', 5, 30, 10, 8, 'mamiferos', 7),
+('Bear', 12, 80, 23, 10, 'mamiferos', 8),
+('Deer', 3, 24, 1, 6, 'mamiferos', 9),
+('Elephant', 16, 320, 160, 15, 'mamiferos', 10),
+('Gloom Wolf', 10, 200, 70, 9, 'mamiferos', 11),
+('Lion', 13, 80, 30, 9, 'mamiferos', 12),
+('Mammoth', 20, 320, 160, 17, 'mamiferos', 13),
+('Polar Bear', 13, 85, 28, 11, 'mamiferos', 14),
+('Tiger', 10, 75, 40, 10, 'mamiferos', 15),
+('White Lion', 140, 2700, 2300, 120, 'mamiferos', 16),
+('Winter Wolf', 12, 30, 20, 10, 'mamiferos', 17),
+('Yeti', 100, 950, 460, 95, 'mamiferos', 18),
+('Parder', 200, 950, 2900, 180, 'mamiferos', 19),
+('Water Buffalo', 15, 390, 20, 15, 'mamiferos', 20);
 
 INSERT INTO item (tipo) VALUES
 ('armas'),
@@ -296,8 +297,6 @@ SELECT  riqueza.id, tipo, nome, quantidade, min_level, bonus, descricao, peso FR
 
 INSERT INTO riqueza (id, nome, quantidade, min_level, bonus, descricao, peso) VALUES
 (4, 'Gold Coin', 1, 0, 0, 'Vocês está vendo Gold Coin. Peso 1.', 1),
-(43, 'Bar of Gold', 1, 0, 0, 'Vocês está vendo Bar of Gold. Peso 1.', 1);
-
 
 SELECT equipamento.id, tipo, nome, vocacao, min_level, bonus, descricao , peso, defesa, pch FROM item INNER JOIN equipamento ON item.id = equipamento.id;
 
