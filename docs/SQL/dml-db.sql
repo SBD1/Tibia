@@ -431,11 +431,3 @@ UPDATE equipamento SET preco = 2000 WHERE nome = 'Metal Spats';
 UPDATE equipamento SET preco = 5000 WHERE nome = 'Zaoan Shoes';
 UPDATE equipamento SET preco = 7500 WHERE nome = 'Badger Boots';
 
-
-ALTER TABLE vende DROP COLUMN  nomeplayer;
-
-ALTER TABLE vende
-ADD COLUMN id_player smallint NOT NULL;
-
-ALTER TABLE vende
-ADD CONSTRAINT id_player FOREIGN KEY (id_player) REFERENCES player(id);
