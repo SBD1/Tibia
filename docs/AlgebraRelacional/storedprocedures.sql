@@ -63,7 +63,7 @@ CREATE OR REPLACE FUNCTION get_player_position(_id_player INTEGER)
   DECLARE 
   	_id_posicao INTEGER;
 BEGIN
-	_id_posicao := (SELECT id_localizacao FROM personagem INNER JOIN player ON player.idpersonagem = personagem.id WHERE player.id = _id_player);
+	_id_posicao := (SELECT id_localizacao FROM player WHERE player.id = _id_player);
   	RETURN _id_posicao;
 END;
 $$ LANGUAGE plpgsql;
