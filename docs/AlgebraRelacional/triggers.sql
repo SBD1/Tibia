@@ -38,3 +38,4 @@ CREATE OR REPLACE TRIGGER trigger_verificar_limite_inventario
 BEFORE INSERT ON inventario_guarda_instancia_item
 FOR EACH ROW
 EXECUTE FUNCTION verificar_limite_inventario();
+

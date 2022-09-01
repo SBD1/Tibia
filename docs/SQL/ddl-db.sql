@@ -306,6 +306,15 @@ CREATE TABLE public.instancia_item (
     FOREIGN KEY (id_item) REFERENCES item(id)
 );
 
+CREATE TABLE instancia_item_posicao (
+	id_instancia_item INTEGER NOT NULL,
+	id_localizacao INTEGER NOT NULL,
+	
+	PRIMARY KEY (id_instancia_item, id_localizacao),
+	FOREIGN KEY (id_instancia_item) REFERENCES instancia_item (id),
+	FOREIGN KEY (id_localizacao) REFERENCES localizacao (id)
+);  
+
 CREATE TABLE public.inventario (
     look_corpo integer  NULL,
     look_cabeca integer  NULL,

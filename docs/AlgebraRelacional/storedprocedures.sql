@@ -122,3 +122,34 @@ CREATE OR REPLACE PROCEDURE vende_item(_id_instancia_item INTEGER, _id_player IN
       WHERE id_instancia_item = _id_instancia_item;
 	END;
 $$ LANGUAGE plpgsql;
+
+
+-- Pegar item do chão
+CREATE OR REPLACE PROCEDURE get_item_on_the_floor(_id_instancia_item INTEGER, _id_player INTEGER)
+  AS $$
+  BEGIN
+    DELETE FROM instancia_item_posicao
+    WHERE id_instancia_item = _id_instancia_item;
+
+    INSERT INTO inventario_guarda_instancia_item (id_player, id_instancia_item)
+    VALUES  (_id_player, _id_instancia_item);
+
+  END;
+$$ LANGUAGE plpgsql;
+
+--- Conferir se um item existe
+CREATE OR REPLACE FUNCTION check_item_exists(_id_instancia_item INTEGER)
+  RETURNS BOOLEAN AS $$
+BEGIN
+  RETURN (SELECT count(*) FROM instancia_item WHERE id = _id_instancia_item);
+END;
+$$ LANGUAGE plpgsql;
+
+--- Conferir se possui o item na mochila
+CREATE OR REPLACE FUNCTION check_backpack_has_item(_id_player INTEGER, _id_instancia_item INTEGER)
+  RETURNS BOOLEAN AS $$
+BEGIN
+  RETURN (SELECT count(*) FROM inventario_guarda_instancia_item WHERE id_instancia_item=_id_instancia_item and id_player=_id_player);
+END;
+$$ LANGUAGE plpgsql;
+
