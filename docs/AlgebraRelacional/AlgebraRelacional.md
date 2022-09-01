@@ -27,5 +27,5 @@ As _Transactions_ que serão executadas no jogo podem ser vistas no arquivo [Tra
 
 # Referências
 
-- [Trigger](https://www.alura.com.br/artigos/trigger-em-sql?gclid=Cj0KCQjwjbyYBhCdARIsAArC6LKMl5E4dkJfwyX0wmEtS9gzGiAAbNK9iXwC-SNzoxJ5IFVO5DhQBroaAv50EALw_wcB).)
+- [Trigger](https://www.alura.com.br/artigos/trigger-em-sql?gclid=Cj0KCQjwjbyYBhCdARIsAArC6LKMl5E4dkJfwyX0wmEtS9gzGiAAbNK9iXwC-SNzoxJ5IFVO5DhQBroaAv50EALw_wcB)
 - [Stored Procedure](https://www.devmedia.com.br/introducao-aos-stored-procedures-no-sql-server/7904#:~:text=Stored%20Procedure%2C%20que%20traduzido%20significa,acordo%20com%20a%20necessidade%20individual.)
