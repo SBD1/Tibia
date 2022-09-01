@@ -1,7 +1,7 @@
 CREATE OR REPLACE FUNCTION verificar_limite_inventario() RETURNS trigger AS $verificar_limite_inventario$
     DECLARE
         capacidade_inventario INTEGER;
-		    peso_item_atual INTEGER;
+		peso_item_atual INTEGER;
         soma_peso_itens INTEGER;
     BEGIN
         SELECT capacidade INTO capacidade_inventario FROM inventario WHERE id_player = NEW.id_player;

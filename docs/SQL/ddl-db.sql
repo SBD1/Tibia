@@ -94,7 +94,6 @@ CREATE TABLE public.player (
     data_de_criacao timestamp with time zone  NOT NULL,
     id_conta integer  NOT NULL,
     id_localizacao integer  NOT NULL,
-    riqueza bigint DEFAULT 0 NOT NULL,
     
     PRIMARY KEY (id),
     UNIQUE (nome),
@@ -187,7 +186,6 @@ CREATE TABLE public.mochila (
     nome character(50)  NOT NULL,
     capacidade smallint  NOT NULL,
     min_level smallint  NOT NULL,
-    bonus smallint  NOT NULL,
     descricao text  NULL,
     peso numeric  NOT NULL,
     preco bigint  NULL,
@@ -319,6 +317,7 @@ CREATE TABLE public.inventario (
     fonte_de_luz integer  NULL,
     capacidade integer DEFAULT 410 NOT NULL,
     id_player integer  NOT NULL,
+    riqueza bigint DEFAULT 0 NOT NULL,
 
     PRIMARY KEY (id_player),
     FOREIGN KEY (id_player) REFERENCES player(id)  

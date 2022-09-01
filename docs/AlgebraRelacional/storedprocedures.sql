@@ -79,7 +79,11 @@ BEGIN
 					FULL OUTER JOIN equipamento ON item.id = equipamento.id
 					FULL OUTER JOIN mochila ON item.id = mochila.id 
 					WHERE item.id = _id_item);
-	RETURN _preco_item;
+	IF _preco_item IS NULL THEN
+		RAISE EXCEPTION 'Esse item não possui preço.';
+	ELSE
+		RETURN _preco_item;
+	END IF;
 END;	
 $$ LANGUAGE plpgsql;
 
@@ -92,4 +96,29 @@ BEGIN
 	_tipo_item := (SELECT tipo FROM item WHERE item.id = _id_item);
   	RETURN _tipo_item;
 END;
+$$ LANGUAGE plpgsql;
+
+-- Procedure para vender um item, deve ser usada dentro de uma Transaction
+CREATE OR REPLACE PROCEDURE vende_item(_id_instancia_item INTEGER, _id_player INTEGER, _id_npc INTEGER)
+  AS $$
+	DECLARE
+		_id_item INTEGER;
+		_preco_item BIGINT DEFAULT 0;
+  BEGIN
+		_id_item = get_id_item(id_instancia);
+		_preco_item = get_preco_item(_id_item);
+
+    INSERT INTO vende (id_player, id_instancia_item, id_npc) VALUES
+    (_id_player, _id_instancia_item, _id_npc);
+
+    INSERT INTO inventario_guarda_instancia_item (id_player, id_instancia_item) VALUES
+    (_id_player, _id_instancia_item);
+
+    UPDATE player
+      SET riqueza = riqueza - _preco_item
+      WHERE id = _id_player;
+
+    DELETE FROM npc_carrega_instancia_item
+      WHERE id_instancia_item = _id_instancia_item;
+	END;
 $$ LANGUAGE plpgsql;
