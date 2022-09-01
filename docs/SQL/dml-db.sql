@@ -354,13 +354,13 @@ INSERT INTO inventario (look_corpo, look_cabeca, look_pernas, look_pes, look_cos
 
 
 
-INSERT INTO habilidades (player, velocidade, dano_a_distancia, dano_de_combate, capacidade, defesa_total, nivel_magia, nivel_espada, nivel_machado, nivel_defesa, nivel_punhos, nivel_porrete, nivel_armas_de_dist) VALUES
-('Druid Lcs', 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10),
-('Fer Cavaleiro', 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10),
-('Paladino Jose', 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10),
-('Feiticeira Fer', 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10),
-('Mariana Cavaleira', 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10),
-('Larrissa Druida', 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10);
+INSERT INTO habilidades (id_player, velocidade, dano_a_distancia, dano_de_combate, capacidade, defesa_total, nivel_magia, nivel_espada, nivel_machado, nivel_defesa, nivel_punhos, nivel_porrete, nivel_armas_de_dist) VALUES
+(1, 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10),
+(2, 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10),
+(3, 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10),
+(4, 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10),
+(5, 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10),
+(6, 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10);
 
 
 INSERT INTO guilda (nome, descricao, capacidade, data_de_criacao, id_dono) VALUES
