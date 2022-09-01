@@ -368,3 +368,74 @@ INSERT INTO guilda (nome, descricao, capacidade, data_de_criacao, id_dono) VALUE
 
 INSERT INTO npc_carrega_instancia_item (id_npc, id_instancia_item) VALUES
 (22, 1);
+
+ALTER TABLE armas
+ADD COLUMN preco bigint DEFAULT NULL;
+
+ALTER TABLE equipamento
+ADD COLUMN preco bigint DEFAULT NULL;
+
+ALTER TABLE mochila
+ADD COLUMN preco bigint DEFAULT NULL;
+
+ALTER TABLE riqueza
+ADD COLUMN preco bigint DEFAULT NULL;
+
+ALTER TABLE equipamento
+ADD COLUMN preco bigint DEFAULT NULL;
+
+UPDATE mochila SET preco = 4 WHERE nome = 'Bag';
+UPDATE mochila SET preco = 4 WHERE nome = 'Beach Bag';
+UPDATE mochila SET preco = 4 WHERE nome = 'Golden Bag';
+UPDATE mochila SET preco = 20 WHERE nome = 'Backpack';
+UPDATE mochila SET preco = 20 WHERE nome = 'Beach Backpack';
+
+
+UPDATE armas SET preco = 7 WHERE nome = 'Axe';
+UPDATE armas SET preco = 80 WHERE nome = 'Battle Axe';
+UPDATE armas SET preco = 100 WHERE nome = 'Daramian Axe';
+UPDATE armas SET preco = 50 WHERE nome = 'Golden Axe';
+UPDATE armas SET preco = 4 WHERE nome = 'Hand Axe';
+
+UPDATE armas SET preco = 20 WHERE nome = 'Bone Sword';
+UPDATE armas SET preco = 118 WHERE nome = 'Carlin Sword';
+UPDATE armas SET preco = 1 WHERE nome = 'Combat Knife';
+UPDATE armas SET preco = 500 WHERE nome = 'Broadsword';
+UPDATE armas SET preco = 2 WHERE nome = 'Dagger';
+
+UPDATE armas SET preco = 100 WHERE nome = 'Assassin Star';
+UPDATE armas SET preco = 120 WHERE nome = 'Enchanted Spear';
+UPDATE armas SET preco = 110 WHERE nome = 'Glooth Spear';
+UPDATE armas SET preco = 25 WHERE nome = 'Hunting Spear';
+UPDATE armas SET preco = 25 WHERE nome = 'Small Stone';
+
+UPDATE equipamento SET preco = 1500 WHERE nome = 'Amazon Helmet';
+UPDATE equipamento SET preco = 400 WHERE nome = 'Ancient Tiara';
+UPDATE equipamento SET preco = 150 WHERE nome = 'Bandana';
+UPDATE equipamento SET preco = 100 WHERE nome = 'Blue Spectacles';
+UPDATE equipamento SET preco = 7500 WHERE nome = 'Bonelord Helmet';
+UPDATE equipamento SET preco = 22 WHERE nome = 'Brass Helmet';
+UPDATE equipamento SET preco = 1500 WHERE nome = 'Albino Plate';
+UPDATE equipamento SET preco = 60 WHERE nome = 'Ball Gown';
+UPDATE equipamento SET preco = 500 WHERE nome = 'Belted Cape';
+UPDATE equipamento SET preco = 10000 WHERE nome = 'Blue Robe';
+UPDATE equipamento SET preco = 450 WHERE nome = 'Brass Armor';
+UPDATE equipamento SET preco = 750 WHERE nome = 'Bast Skirt';
+UPDATE equipamento SET preco = 15000 WHERE nome = 'Blue Legs';
+UPDATE equipamento SET preco = 195 WHERE nome = 'Brass Legs';
+UPDATE equipamento SET preco = 80 WHERE nome = 'Chain Legs';
+UPDATE equipamento SET preco = 1500 WHERE nome = 'Chocolatey Dragon Scale Legs';
+UPDATE equipamento SET preco = 1000 WHERE nome = 'Crocodile Boots';
+UPDATE equipamento SET preco = 2 WHERE nome = 'Leather Boots';
+UPDATE equipamento SET preco = 2000 WHERE nome = 'Metal Spats';
+UPDATE equipamento SET preco = 5000 WHERE nome = 'Zaoan Shoes';
+UPDATE equipamento SET preco = 7500 WHERE nome = 'Badger Boots';
+
+
+ALTER TABLE vende DROP COLUMN  nomeplayer;
+
+ALTER TABLE vende
+ADD COLUMN id_player smallint NOT NULL;
+
+ALTER TABLE vende
+ADD CONSTRAINT id_player FOREIGN KEY (id_player) REFERENCES player(id);
