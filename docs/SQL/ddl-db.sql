@@ -171,7 +171,7 @@ CREATE TABLE public.equipamento (
 CREATE TABLE public.riqueza (
     id integer  NOT NULL,
     nome character(50)  NULL,
-    aumento bigint  NOT NULL,
+    valor bigint  NOT NULL,
     min_level smallint  NOT NULL,
     descricao text  NULL,
     peso numeric  NOT NULL,

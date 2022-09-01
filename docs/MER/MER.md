@@ -7,6 +7,7 @@
 | 31/07/2022 | 0.3    | Correção de erros gramaticais e aperfeiçoamento da disposição dos elementos do Diagrama | [João Durso](https://github.com/jvsdurso), [Laís Ramos](https://github.com/laisramos123)                                                 |
 | 31/07/2022 | 0.4    | Adição das relações                                                                     | [Laís Ramos](https://github.com/laisramos123)                                                                                            |
 | 02/08/2022 | 0.5    | Melhoria de documento                                                                   | [João Durso](https://github.com/jvsdurso), [Laís Ramos](https://github.com/laisramos123)                                                 |
+| 01/09/2022 | 0.6    | Retificando cardinalidades e melhorando o DER                                                                 | [João Durso](https://github.com/jvsdurso)                                                                                                |
 
 ## Modelo Entidade-Relacionamento
 
@@ -16,7 +17,7 @@ O DER (Diagrama Entidade-Relacionamento) é utilizado para representar em forma 
 
 ## Diagrama Entidade-Relacionamento
 
-![DER v1.2](../assets/images/MER/DERv1_2.png)
+![DER v1.3](../assets/images/MER/DERv1_3.png)
 
 ## Versões Anteriores
 
@@ -70,4 +71,19 @@ As modificações realizadas nesta versão foram:
  
 **Autor(es):** <br>
 [João Durso](https://github.com/jvsdurso), [Lais Ramos](https://github.com/laisramos123) <br><br>
+</details>
+
+<details>
+<summary>Clique para apresentar a versão 1.3 do DER</summary>
+ 
+### DER v1.3
+As modificações realizadas nesta versão foram:
+- Correção das cardinalidades (Feedback da entrega 2)
+- Desfazendo a mudança de chave primária de idPlayer para nomePlayer 
+ 
+ 
+![DER v1.3](../assets/images/MER/DERv1_3.png)
+ 
+**Autor(es):** <br>
+[João Durso](https://github.com/jvsdurso)<br><br>
 </details>
