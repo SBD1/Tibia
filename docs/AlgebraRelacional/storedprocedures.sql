@@ -98,7 +98,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
--- Procedure para vender um item, deve ser usada dentro de uma Transaction
+-- Procedure para vender um item (TRANSACTION)
 CREATE OR REPLACE PROCEDURE vende_item(_id_instancia_item INTEGER, _id_player INTEGER, _id_npc INTEGER)
   AS $$
 	DECLARE
@@ -124,7 +124,7 @@ CREATE OR REPLACE PROCEDURE vende_item(_id_instancia_item INTEGER, _id_player IN
 $$ LANGUAGE plpgsql;
 
 
--- Pegar item do chão
+-- Pegar item do chão (TRANSACTION)
 CREATE OR REPLACE PROCEDURE get_item_on_the_floor(_id_instancia_item INTEGER, _id_player INTEGER)
   AS $$
   BEGIN
@@ -153,3 +153,78 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
+-- Equipar arma do inventário (TRANSACTION)
+CREATE OR REPLACE PROCEDURE equip_weapon_from_inventory(_id_instancia_item INTEGER, _id_player INTEGER)
+  AS $$
+  DECLARE 
+ 	_id_item integer;
+  	_tipo_item tipoitem;
+	_is_empty integer;
+  BEGIN
+    DELETE FROM inventario_guarda_instancia_item
+    WHERE id_instancia_item = _id_instancia_item;
+	
+	_id_item = get_id_item(_id_instancia_item);
+	_tipo_item = get_tipo_item(_id_item);
+	
+	--RAISE NOTICE '_id_item: %', _id_item;
+	--RAISE NOTICE '_tipo_item: %', _tipo_item;
+	
+	IF LOWER(_tipo_item) = 'armas' THEN
+		SELECT mao_dir FROM inventario INTO _is_empty WHERE id_player = _id_player;
+		
+		IF _is_empty IS NOT NULL THEN
+			SELECT mao_esq FROM inventario INTO _is_empty WHERE id_player = _id_player;
+			IF _is_empty IS NOT NULL THEN
+				RAISE EXCEPTION 'Você já está usando duas armas. Desequipe uma delas e tente novamente.';
+			ELSE 
+				UPDATE inventario 
+					SET mao_esq = _id_instancia_item WHERE id_player = _id_player;
+			END IF;
+		ELSE 
+			UPDATE inventario 
+				SET mao_dir = _id_instancia_item WHERE id_player = _id_player;
+		END IF;
+		
+	END IF;
+	
+  END;
+$$ LANGUAGE plpgsql;
+
+-- Desequipar arma da mão direita
+CREATE OR REPLACE PROCEDURE unequip_weapon_from_right_hand(_id_player INTEGER)
+  AS $$
+  DECLARE 
+ 	_mao_dir integer;
+  BEGIN
+  	_mao_dir = (SELECT mao_dir FROM inventario WHERE id_player = _id_player);
+    
+	IF _mao_dir IS NULL THEN
+		RAISE EXCEPTION 'Você não possui arma na mão direita.';
+	ELSE
+		UPDATE inventario
+			SET mao_dir = NULL 
+			WHERE id_player = _id_player;
+	END IF;
+  
+  END;
+$$ LANGUAGE plpgsql;
+
+-- Desequipar arma da mão esquerda
+CREATE OR REPLACE PROCEDURE unequip_weapon_from_left_hand(_id_player INTEGER)
+  AS $$
+  DECLARE 
+ 	_mao_esq integer;
+  BEGIN
+  	_mao_esq = (SELECT mao_esq FROM inventario WHERE id_player = _id_player);
+    
+	IF _mao_esq IS NULL THEN
+		RAISE EXCEPTION 'Você não possui arma na mão esquerda.';
+	ELSE
+		UPDATE inventario
+			SET mao_esq = NULL 
+			WHERE id_player = _id_player;
+	END IF;
+  
+  END;
+$$ LANGUAGE plpgsql;
