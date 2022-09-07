@@ -6,12 +6,13 @@
   "author": "laisramos123 <laisramos123@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "start": "nodemon -L src/main.js",
+    "migrate": "node src/utils/migrate.js"
   },
   "dependencies": {
     "body-parser": "^1.13.2",
     "express": "^4.18.1",
-    "fs": "^0.0.1-security",
+    "knex": "^2.3.0",
     "pg": "^8.8.0"
   },
   "devDependencies": {
