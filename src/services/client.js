@@ -1,11 +1,11 @@
-const { Client } = require('pg')
+const pg = require('pg')
 
-const client = new Client({
+const client = new pg.Client({
     user: 'postgres',
     host: 'localhost',
     database: 'tibia',
     password: 'postgres',
-    port: 5435
+    port: 5432
 });
 
 module.exports = client;
