@@ -1,27 +1,31 @@
--- Procedure para vender um item, deve ser usada dentro de uma Transaction
-CREATE OR REPLACE PROCEDURE vende_item(_id_instancia_item INTEGER, _id_player INTEGER, _id_npc INTEGER)
-  AS $$
-	DECLARE
-		_id_item INTEGER;
-		_preco_item moeda DEFAULT 0;
-  BEGIN
-		_id_item = get_id_item(id_instancia);
-		_preco_item = get_preco_item(_id_item);
+-- NPC vende item ao player
+BEGIN; 
+    CALL vende_item(1, 4, 22);
+COMMIT; --OR ROLLBACK
 
-    INSERT INTO vende (id_player, id_instancia_item, id_npc) VALUES
-    (_id_player, _id_instancia_item, _id_npc);
+-- Player pega item do chão 
+BEGIN; 
+	INSERT INTO instancia_item_posicao (id_instancia_item, id_localizacao) VALUES (5, 28);
+	CALL "get_item_on_the_floor" (5, 3);
+	SELECT * from inventario_guarda_instancia_item;
+COMMIT; --OR ROLLBACK
 
-    INSERT INTO inventario_guarda_instancia_item (id_player, id_instancia_item) VALUES
-    (_id_player, _id_instancia_item);
+-- Equipar arma do inventário
+BEGIN;
+	INSERT INTO inventario_guarda_instancia_item (id_player, id_instancia_item) VALUES (3, 2);
+	SELECT * FROM inventario_guarda_instancia_item;
+	CALL "equip_weapon_from_inventory" (2, 3);
+	SELECT id_player, mao_dir, mao_esq FROM inventario ORDER BY id_player ASC;
+COMMIT; --OR ROLLBACK
 
--- FALTA SUBTRAIR AS MOEDAS DO PLAYER (COMO?)
-    UPDATE riqueza
-      SET quantidade = quantidade - _preco_item
-      WHERE nome = _nome_treinador;
+-- Desequipar arma da mão direita
+BEGIN; 
+	CALL "unequip_weapon_from_right_hand" (3);	
+	SELECT id_player, mao_dir, mao_esq FROM inventario ORDER BY id_player ASC;
+COMMIT; --OR ROLLBACK
 
-    DELETE FROM npc_carrega_instancia_item
-      WHERE id_instancia_item = _id_instancia_item;
-	END;
-$$ LANGUAGE plpgsql;
-
-
+-- Desequipar arma da mão esquerda
+BEGIN; 
+	CALL "unequip_weapon_from_left_hand" (3);	
+	SELECT id_player, mao_dir, mao_esq FROM inventario ORDER BY id_player ASC;
+COMMIT; --OR ROLLBACK

@@ -1,6 +1,6 @@
-INSERT INTO mapa (nome) VALUES ('Mapa');
+INSERT INTO mapa (id, nome) VALUES (1, 'Azeroth');
 
-INSERT INTO regiao (idmapa, nome, vip_check) VALUES 
+INSERT INTO regiao (id_mapa, nome, vip_check) VALUES 
 (1, 'Venore', DEFAULT), 
 (1, 'Jakundaf Desert', DEFAULT), 
 (1, 'Outlaw Camp', DEFAULT),
@@ -139,80 +139,81 @@ INSERT INTO localizacao (posicao_x, posicao_y, posicao_z, id_regiao) VALUES
 (12, 8, 0, 5);
 
 
-INSERT INTO conta (senha, vip_dias, email, nome, localidade, banimento, data_de_criacao, data_de_aniversario, genero) VALUES
-('12345678' , 0, 'lucas.araujo@email.com', 'Lucas Araujo', 'Brasil', DEFAULT, '26/07/2022', '18/02/1990' , 'Masculino'), 
-('87654321' , 0, 'felipe.souza@email.com', 'Felipe Souza', 'Brasil', DEFAULT, '26/07/2022', '21/05/1991' , 'Masculino'), 
-('741852' , 30, 'jose.pedro@email.com', 'José Pedro', 'Brasil', DEFAULT, '27/07/2022', '11/03/1991' , 'Masculino'), 
-('369258' , 0, 'fernanda.oliveira@email.com', 'Fernanda Oliveira', 'Brasil', DEFAULT, '27/07/2022', '22/11/1992' , 'Feminino'), 
-('1592648' , 0, 'mariana.silva@email.com', 'Mariana Silva', 'Brasil', DEFAULT, '28/07/2022', '26/01/1992' , 'Feminino'), 
-('951847623' , 30, 'larrisa.cristina@email.com', 'Larrisa Cristina', 'Brasil', DEFAULT, '28/07/2022', '01/02/1991' , 'Feminino');
+INSERT INTO conta (id senha, vip_dias, email, nome, localidade, banimento, data_de_criacao, data_de_aniversario, genero) VALUES
+(1, '12345678' , 0, 'lucas.araujo@email.com', 'Lucas Araujo', 'Brasil', DEFAULT, '26/07/2022', '18/02/1990' , 'Masculino'), 
+(2, '87654321' , 0, 'felipe.souza@email.com', 'Felipe Souza', 'Brasil', DEFAULT, '26/07/2022', '21/05/1991' , 'Masculino'), 
+(3, '741852' , 30, 'jose.pedro@email.com', 'José Pedro', 'Brasil', DEFAULT, '27/07/2022', '11/03/1991' , 'Masculino'), 
+(4, '369258' , 0, 'fernanda.oliveira@email.com', 'Fernanda Oliveira', 'Brasil', DEFAULT, '27/07/2022', '22/11/1992' , 'Feminino'), 
+(5, '1592648' , 0, 'mariana.silva@email.com', 'Mariana Silva', 'Brasil', DEFAULT, '28/07/2022', '26/01/1992' , 'Feminino'), 
+(6, '951847623' , 30, 'larrisa.cristina@email.com', 'Larrisa Cristina', 'Brasil', DEFAULT, '28/07/2022', '01/02/1991' , 'Feminino');
 
-INSERT INTO personagem (tipo, idlocalizacao) VALUES
-('criatura', '11'), 
-('criatura', '16'), 
-('criatura', '21'), 
-('criatura', '26'), 
-('criatura', '31'), 
-('criatura', '36'), 
-('criatura', '41'), 
-('criatura', '46'), 
-('criatura', '51'), 
-('criatura', '56'), 
-('criatura', '61'), 
-('criatura', '66'), 
-('criatura', '71'),
-('criatura', '76'),
-('criatura', '81'),
-('npc', '25'), 
-('npc', '50'), 
-('npc', '75'), 
-('npc', '100'), 
-('npc', '125'),
+INSERT INTO personagem (tipo, id) VALUES
 ('player', '1'),
-('player', '2'),
 ('player', '2'),
 ('player', '3'),
 ('player', '4'),
-('player', '5');
+('player', '5'),
+('player', '6'),
+('criatura', '7'), 
+('criatura', '8'), 
+('criatura', '9'), 
+('criatura', '10'), 
+('criatura', '11'), 
+('criatura', '12'), 
+('criatura', '13'), 
+('criatura', '14'), 
+('criatura', '15'), 
+('criatura', '16'), 
+('criatura', '17'), 
+('criatura', '18'),
+('criatura', '19'),
+('criatura', '20'),
+('criatura', '21'),
+('npc', '22'), 
+('npc', '23'), 
+('npc', '24'), 
+('npc', '25'),
+('npc', '26');  
 
-INSERT INTO player (nome, vocacao, vida_maxima, vida_atual, mana_maxima, mana_atual, genero, experiencia, idpersonagem, data_de_criacao, id_conta) VALUES
-('Druid Lcs', 'druida', 100, 100, 200, 200, 'masculino', 0, 21, '25/07/2022', 1),
-('Fer Cavaleiro', 'cavaleiro', 150, 150, 100, 100, 'masculino', 0, 22, '25/07/2022', 2),
-('Paladino Jose', 'paladino', 130, 130, 130, 130, 'masculino', 0, 23, '25/07/2022', 3),
-('Feiticeira Fer', 'feiticeiro', 100, 100, 200, 200, 'feminino', 0, 24, '25/07/2022', 4),
-('Mariana Cavaleira', 'cavaleiro', 150, 150, 100, 100, 'feminino', 0, 25, '25/07/2022', 5),
-('Larrissa Druida', 'druida', 100, 100, 200, 200, 'feminino', 0, 26, '25/07/2022', 6);
+
+INSERT INTO player (id, nome, vocacao, vida_maxima, vida_atual, mana_maxima, mana_atual, genero, experiencia, data_de_criacao, id_conta, id_localizacao, riqueza) VALUES
+(1, 'Druid Lcs', 'druida', 100, 100, 200, 200, 'masculino', 0, '25/07/2022', 1, 1, 0),
+(2, 'Fer Cavaleiro', 'cavaleiro', 150, 150, 100, 100, 'masculino', 0, '25/07/2022', 2, 24, 2000),
+(3, 'Paladino Jose', 'paladino', 130, 130, 130, 130, 'masculino', 0, '25/07/2022', 3, 49, 4000),
+(4, 'Feiticeira Fer', 'feiticeiro', 100, 100, 200, 200, 'feminino', 0, '25/07/2022', 4, 74, 5000),
+(5, 'Mariana Cavaleira', 'cavaleiro', 150, 150, 100, 100, 'feminino', 0, '25/07/2022', 5, 99, 30),
+(6, 'Larrissa Druida', 'druida', 100, 100, 200, 200, 'feminino', 0, '25/07/2022', 6, 125, 50);
 
 
-INSERT INTO npc (nome, tipo, idpersonagem) VALUES
-('Rashid', 'comerciante', 16),	
-('Vega', 'comerciante', 17),	
-('Travora', 'comerciante', 18),	
-('Yasir', 'guia', 19),	
-('Ashtamor', 'guia', 20);
+INSERT INTO npc (id, nome, tipo, id_localizacao) VALUES
+(22, 'Rashid', 'comerciante', 3),	
+(23, 'Vega', 'comerciante', 28),	
+(24, 'Travora', 'comerciante', 53),	
+(25, 'Yasir', 'guia', 78),	
+(26, 'Ashtamor', 'guia', 103);
 
-INSERT INTO criatura (nome, ataque, vida, experiencia, defesa, tipo, idpersonagem) VALUES
-('Badger', 2, 23, 5, 5, 'mamiferos', 1),
-('Bat', 5, 30, 10, 8, 'mamiferos', 2),
-('Bear', 12, 80, 23, 10, 'mamiferos', 3),
-('Deer', 3, 24, 1, 6, 'mamiferos', 4),
-('Elephant', 16, 320, 160, 15, 'mamiferos', 5),
-('Gloom Wolf', 10, 200, 70, 9, 'mamiferos', 6),
-('Lion', 13, 80, 30, 9, 'mamiferos', 7),
-('Mammoth', 20, 320, 160, 17, 'mamiferos', 8),
-('Polar Bear', 13, 85, 28, 11, 'mamiferos', 9),
-('Tiger', 10, 75, 40, 10, 'mamiferos', 10),
-('White Lion', 140, 2700, 2300, 120, 'mamiferos', 11),
-('Winter Wolf', 12, 30, 20, 10, 'mamiferos', 12),
-('Yeti', 100, 950, 460, 95, 'mamiferos', 13),
-('Parder', 200, 950, 2900, 180, 'mamiferos', 14),
-('Water Buffalo', 15, 390, 20, 15, 'mamiferos', 15);
+INSERT INTO criatura (nome, ataque, vida, experiencia, defesa, tipo, id, id_localizacao) VALUES
+('Bat', 5, 30, 10, 8, 'mamiferos', 7, 5),
+('Bear', 12, 80, 23, 10, 'mamiferos', 8, 30),
+('Deer', 3, 24, 1, 6, 'mamiferos', 9, 55),
+('Elephant', 16, 320, 160, 15, 'mamiferos', 10, 80),
+('Gloom Wolf', 10, 200, 70, 9, 'mamiferos', 11, 105),
+('Lion', 13, 80, 30, 9, 'mamiferos', 12, 6),
+('Mammoth', 20, 320, 160, 17, 'mamiferos', 13, 31),
+('Polar Bear', 13, 85, 28, 11, 'mamiferos', 14, 56),
+('Tiger', 10, 75, 40, 10, 'mamiferos', 15, 81),
+('White Lion', 140, 2700, 2300, 120, 'mamiferos', 16, 106),
+('Winter Wolf', 12, 30, 20, 10, 'mamiferos', 17, 7),
+('Yeti', 100, 950, 460, 95, 'mamiferos', 18, 32),
+('Parder', 200, 950, 2900, 180, 'mamiferos', 19, 56),
+('Water Buffalo', 15, 390, 20, 15, 'mamiferos', 20, 81),
+('Badger', 2, 23, 5, 5, 'mamiferos', 21, 106);
 
-INSERT INTO item (tipo) VALUES
-('armas'),
-('equipamento'),
-('mochila'),
-('riqueza');
+INSERT INTO item (id, tipo) VALUES
+(1, 'armas'),
+(2, 'equipamento'),
+(3, 'mochila'),
+(4, 'riqueza');
 
 INSERT INTO item (tipo) VALUES
 ('armas'),
@@ -284,20 +285,18 @@ INSERT INTO armas (id, nome, ataque, defesa, vocacao, min_level, bonus, descrica
 SELECT  mochila.id, tipo, nome, capacidade, min_level, descricao, peso FROM item INNER JOIN mochila ON item.id = mochila.id;
 
 
-INSERT INTO mochila (id, nome, capacidade, min_level, bonus, descricao, peso) VALUES
-(3, 'Bag', 8, 0, 'Vocês está vendo Bag. Peso 8.', 8),
-(19, 'Beach Bag', 8, 0, 'Vocês está vendo Beach Bag. Peso 8.', 8),
-(20, 'Golden Bag', 8, 0, 'Vocês está vendo Golden Bag. Peso 8.', 8),
-(21, 'Backpack', 20, 0, 'Vocês está vendo Backpack. Peso 18.', 18),
-(22, 'Beach Backpack', 20, 0, 'Vocês está vendo Beach Backpack. Peso 18.', 18);
+INSERT INTO mochila (id, nome, capacidade, min_level, descricao, peso) VALUES
+(3, 'Bag', 100, 0, 'Vocês está vendo Bag. Peso 8.', 8),
+(19, 'Beach Bag', 100, 0, 'Vocês está vendo Beach Bag. Peso 8.', 8),
+(20, 'Golden Bag', 100, 0, 'Vocês está vendo Golden Bag. Peso 8.', 8),
+(21, 'Backpack', 300, 0, 'Vocês está vendo Backpack. Peso 18.', 18),
+(22, 'Beach Backpack', 300, 0, 'Vocês está vendo Beach Backpack. Peso 18.', 18);
 
 
 SELECT  riqueza.id, tipo, nome, quantidade, min_level, bonus, descricao, peso FROM item INNER JOIN riqueza ON item.id = riqueza.id;
 
-INSERT INTO riqueza (id, nome, quantidade, min_level, bonus, descricao, peso) VALUES
-(4, 'Gold Coin', 1, 0, 0, 'Vocês está vendo Gold Coin. Peso 1.', 1),
-(43, 'Bar of Gold', 1, 0, 0, 'Vocês está vendo Bar of Gold. Peso 1.', 1);
-
+INSERT INTO riqueza (id, nome, aumento, min_level, descricao, peso) VALUES
+(4, 'Gold Coin', 1, 0, 'Vocês está vendo Gold Coin. Peso 1.', 1);
 
 SELECT equipamento.id, tipo, nome, vocacao, min_level, bonus, descricao , peso, defesa, pch FROM item INNER JOIN equipamento ON item.id = equipamento.id;
 
@@ -344,25 +343,94 @@ INSERT INTO instancia_item (id_item) VALUES
 (21),
 (2);
 
-
-INSERT INTO inventario (look_corpo, look_cabeca, look_pernas, look_pes, look_costas, mao_dir, mao_esq, fonte_de_luz, capacidade, id_player) VALUES
-(null, null, null, null, 7, 1, null, null, 410, 1),
-(null, null, null, null, 8, 2, null, null, 410, 2),
-(null, null, null, null, 9, 3, null, null, 410, 3),
-(null, null, null, null, 10, 4, null, null, 410, 4),
-(null, null, null, null, 11, 5, null, null, 410, 5),
-(null, null, null, null, 12, 6, null, null, 410, 6);
+INSERT INTO instancia_criatura (id_criatura) VALUES
+(7), (8), (9), (10), (11), (12), (13), (14), (15), (16), (17), (18), (19), (20), (21);
 
 
+INSERT INTO inventario (look_corpo, look_cabeca, look_pernas, look_pes, look_costas, mao_dir, mao_esq, fonte_de_luz, capacidade, id_player, riqueza) VALUES
+(null, null, null, null, 7, 1, null, null, 410, 1, 0),
+(null, null, null, null, 8, 2, null, null, 410, 2, 30),
+(null, null, null, null, 9, 3, null, null, 410, 3, 50),
+(null, null, null, null, 10, 4, null, null, 410, 4, 2000),
+(null, null, null, null, 11, 5, null, null, 410, 5, 5000),
+(null, null, null, null, 12, 6, null, null, 410, 6, 1000);
 
-INSERT INTO habilidades (player, velocidade, dano_a_distancia, dano_de_combate, capacidade, defesa_total, nivel_magia, nivel_espada, nivel_machado, nivel_defesa, nivel_punhos, nivel_porrete, nivel_armas_de_dist) VALUES
-('Druid Lcs', 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10),
-('Fer Cavaleiro', 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10),
-('Paladino Jose', 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10),
-('Feiticeira Fer', 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10),
-('Mariana Cavaleira', 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10),
-('Larrissa Druida', 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10);
+
+
+INSERT INTO habilidades (id_player, velocidade, dano_a_distancia, dano_de_combate, capacidade, defesa_total, nivel_magia, nivel_espada, nivel_machado, nivel_defesa, nivel_punhos, nivel_porrete, nivel_armas_de_dist) VALUES
+(1, 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10),
+(2, 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10),
+(3, 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10),
+(4, 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10),
+(5, 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10),
+(6, 110, 5, 5, 10, 10, 1, 10, 10, 10, 10, 10, 10);
 
 
 INSERT INTO guilda (nome, descricao, capacidade, data_de_criacao, id_dono) VALUES
 ('Brs', 'Guilda montada para jogadores brasileiros', '20', '30/06/2022', 1);
+
+INSERT INTO npc_carrega_instancia_item (id_npc, id_instancia_item) VALUES
+(22, 1);
+
+ALTER TABLE armas
+ADD COLUMN preco bigint DEFAULT NULL;
+
+ALTER TABLE equipamento
+ADD COLUMN preco bigint DEFAULT NULL;
+
+ALTER TABLE mochila
+ADD COLUMN preco bigint DEFAULT NULL;
+
+ALTER TABLE riqueza
+ADD COLUMN preco bigint DEFAULT NULL;
+
+ALTER TABLE equipamento
+ADD COLUMN preco bigint DEFAULT NULL;
+
+UPDATE mochila SET preco = 4 WHERE nome = 'Bag';
+UPDATE mochila SET preco = 4 WHERE nome = 'Beach Bag';
+UPDATE mochila SET preco = 4 WHERE nome = 'Golden Bag';
+UPDATE mochila SET preco = 20 WHERE nome = 'Backpack';
+UPDATE mochila SET preco = 20 WHERE nome = 'Beach Backpack';
+
+
+UPDATE armas SET preco = 7 WHERE nome = 'Axe';
+UPDATE armas SET preco = 80 WHERE nome = 'Battle Axe';
+UPDATE armas SET preco = 100 WHERE nome = 'Daramian Axe';
+UPDATE armas SET preco = 50 WHERE nome = 'Golden Axe';
+UPDATE armas SET preco = 4 WHERE nome = 'Hand Axe';
+
+UPDATE armas SET preco = 20 WHERE nome = 'Bone Sword';
+UPDATE armas SET preco = 118 WHERE nome = 'Carlin Sword';
+UPDATE armas SET preco = 1 WHERE nome = 'Combat Knife';
+UPDATE armas SET preco = 500 WHERE nome = 'Broadsword';
+UPDATE armas SET preco = 2 WHERE nome = 'Dagger';
+
+UPDATE armas SET preco = 100 WHERE nome = 'Assassin Star';
+UPDATE armas SET preco = 120 WHERE nome = 'Enchanted Spear';
+UPDATE armas SET preco = 110 WHERE nome = 'Glooth Spear';
+UPDATE armas SET preco = 25 WHERE nome = 'Hunting Spear';
+UPDATE armas SET preco = 25 WHERE nome = 'Small Stone';
+
+UPDATE equipamento SET preco = 1500 WHERE nome = 'Amazon Helmet';
+UPDATE equipamento SET preco = 400 WHERE nome = 'Ancient Tiara';
+UPDATE equipamento SET preco = 150 WHERE nome = 'Bandana';
+UPDATE equipamento SET preco = 100 WHERE nome = 'Blue Spectacles';
+UPDATE equipamento SET preco = 7500 WHERE nome = 'Bonelord Helmet';
+UPDATE equipamento SET preco = 22 WHERE nome = 'Brass Helmet';
+UPDATE equipamento SET preco = 1500 WHERE nome = 'Albino Plate';
+UPDATE equipamento SET preco = 60 WHERE nome = 'Ball Gown';
+UPDATE equipamento SET preco = 500 WHERE nome = 'Belted Cape';
+UPDATE equipamento SET preco = 10000 WHERE nome = 'Blue Robe';
+UPDATE equipamento SET preco = 450 WHERE nome = 'Brass Armor';
+UPDATE equipamento SET preco = 750 WHERE nome = 'Bast Skirt';
+UPDATE equipamento SET preco = 15000 WHERE nome = 'Blue Legs';
+UPDATE equipamento SET preco = 195 WHERE nome = 'Brass Legs';
+UPDATE equipamento SET preco = 80 WHERE nome = 'Chain Legs';
+UPDATE equipamento SET preco = 1500 WHERE nome = 'Chocolatey Dragon Scale Legs';
+UPDATE equipamento SET preco = 1000 WHERE nome = 'Crocodile Boots';
+UPDATE equipamento SET preco = 2 WHERE nome = 'Leather Boots';
+UPDATE equipamento SET preco = 2000 WHERE nome = 'Metal Spats';
+UPDATE equipamento SET preco = 5000 WHERE nome = 'Zaoan Shoes';
+UPDATE equipamento SET preco = 7500 WHERE nome = 'Badger Boots';
+
