@@ -4,7 +4,7 @@ services:
   game:
     build: .
     ports:
-      - '3000:3000'
+      - '1234:1234'
     volumes:
       - .:/app
     depends_on:
@@ -16,6 +16,7 @@ services:
       - POSTGRES_PASSWORD=postgres
       - TZ=America/Sao_Paulo
     volumes:
+      - .:/app
       - data:/var/lib/postgresql/data
 
 volumes:

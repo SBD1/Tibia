@@ -1,6 +1,6 @@
-const knex = require('knex')
+import knex from 'knex';
 
-module.exports = knex({
+const db = knex({
   client: 'postgres',
   connection: {
     host: 'db',
@@ -8,4 +8,13 @@ module.exports = knex({
     password: 'postgres',
     database: 'tibia',
   },
-})
+});
+
+export async function connection () {
+  db.select('*').from('item')
+  .then((item) => {
+    console.log(item);
+  });
+}
+
+export default db;
