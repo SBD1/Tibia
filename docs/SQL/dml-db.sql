@@ -343,6 +343,9 @@ INSERT INTO instancia_item (id_item) VALUES
 (21),
 (2);
 
+INSERT INTO instancia_criatura (id_criatura) VALUES
+(7), (8), (9), (10), (11), (12), (13), (14), (15), (16), (17), (18), (19), (20), (21);
+
 
 INSERT INTO inventario (look_corpo, look_cabeca, look_pernas, look_pes, look_costas, mao_dir, mao_esq, fonte_de_luz, capacidade, id_player, riqueza) VALUES
 (null, null, null, null, 7, 1, null, null, 410, 1, 0),
