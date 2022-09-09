@@ -11,9 +11,11 @@ const db = knex({
 });
 
 export async function connection () {
-  db.select('*').from('item')
+  await db.select('*').from('item')
   .then((item) => {
     console.log(item);
+  }).catch((error) => {
+    console.log(error);
   });
 }
 
