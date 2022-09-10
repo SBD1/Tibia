@@ -1,8 +1,9 @@
 import knex from 'knex';
+const Client = require('pg')
 
 const db = knex({
-  client: 'postgres',
-  connection: {
+    client: 'postgres',
+    connection: {
     host: 'db',
     user: 'postgres',
     password: 'postgres',
@@ -18,5 +19,20 @@ export async function connection () {
     console.log(error);
   });
 }
+
+// getItens();
+
+// async function getItens() {
+//   try {
+//     await db.connection()
+//     const item = await db.client.query("select * from item") 
+//     console.table(item. rows)
+//   } catch ( error ) {
+//     console.log("Ocorreu um erro no getItems. Erro: " + error)
+//   } finally {
+//     await db.end();
+//   }
+
+// }
 
 export default db;
