@@ -1,83 +1,52 @@
-import styled, { css } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
 import Base from '../../../../../styles/tile';
 
-import topBorder64 from './item_304.png';
-import leftBorder64 from './item_307.png';
-import bottomBorder64 from './item_407.png';
-import rightBorder64 from './item_618.png';
+import sprite1 from './1253.png';
+import sprite2 from './1254.png';
+import sprite3 from './1255.png';
+import sprite4 from './1256.png';
+import sprite5 from './1257.png';
+import sprite6 from './1258.png';
 
-import topLeftCorner32 from './item_312.png';
-import topRightCorner32 from './item_313.png';
-import bottomLeftCorner32 from './item_314.png';
-import bottomRightCorner32 from './item_315.png';
+const animationKeyframes = keyframes`
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 -100%;
+    }
+`;
 
-import topLeftTip32 from './item_308.png';
-import topRightTip32 from './item_309.png';
-import bottomLeftTip32 from './item_310.png';
-import bottomRightTip32 from './item_311.png';
+const animationRule = css`
+    animation: ${animationKeyframes} 2s steps(12) infinite;
+`;
 
 export const options = {
-    /* -- edges -- */
-    TopBorder1: css`
-        background-image: url(${topBorder64});
+    BeachBorder1: `
+        background-image: url(${sprite1});
     `,
-    TopBorder2: css`
-        background-image: url(${topBorder64});
-        background-position: -32px 0;
+    BeachBorder2: `
+        background-image: url(${sprite2});
     `,
-    LeftBorder1: css`
-        background-image: url(${leftBorder64});
+    BeachBorder3: `
+        background-image: url(${sprite3});
     `,
-    LeftBorder2: css`
-        background-image: url(${leftBorder64});
-        background-position: 0 -32px;
+    BeachBorder4: `
+        background-image: url(${sprite4});
     `,
-    BottomBorder1: css`
-        background-image: url(${bottomBorder64});
+    BeachBorder5: `
+        background-image: url(${sprite5});
     `,
-    BottomBorder2: css`
-        background-image: url(${bottomBorder64});
-        background-position: -32px 0;
-    `,
-    RightBorder1: css`
-        background-image: url(${rightBorder64});
-    `,
-    RightBorder2: css`
-        background-image: url(${rightBorder64});
-        background-position: 0 -32px;
-    `,
-    /* -- corners -- */
-    TopLeftCorner: css`
-        background-image: url(${topLeftCorner32});
-    `,
-    TopRightCorner: css`
-        background-image: url(${topRightCorner32});
-    `,
-    BottomLeftCorner: css`
-        background-image: url(${bottomLeftCorner32});
-    `,
-    BottomRightCorner: css`
-        background-image: url(${bottomRightCorner32});
-    `,
-    /* -- tips -- */
-    TopLeftTip: css`
-        background-image: url(${topLeftTip32});
-    `,
-    TopRightTip: css`
-        background-image: url(${topRightTip32});
-    `,
-    BottomLeftTip: css`
-        background-image: url(${bottomLeftTip32});
-    `,
-    BottomRightTip: css`
-        background-image: url(${bottomRightTip32});
-    `,
+    BeachBorder6: `
+        background-image: url(${sprite6});
+    `
 };
 
 export default styled(Base)`
-    ${({ type }) => (
-        type
-            ? options[type]
+    ${({ tile }) => (
+        tile
+            ? options[tile]
             : options[Object.keys(options).shift()]
     )}
+    ${animationRule}
 `;

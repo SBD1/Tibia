@@ -16,6 +16,7 @@ const tileItems = {
         items: ['terrain:GroundSpikes']
     }
 };
+
 const lake = {
     '5:5:0': {
         items: [
@@ -11383,6 +11384,4225 @@ const lava = {
 	},
 };
 
+const beach_border = {
+	'34:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'35:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'36:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'37:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'38:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'39:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'40:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'41:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'42:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'43:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'44:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'45:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'46:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'47:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'48:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'49:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'50:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'51:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'52:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'53:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'54:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'55:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'56:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'57:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'58:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'59:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'60:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'61:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+	'62:62:0': {
+		items: [
+			'tiles:BeachBorder',
+		]
+	},
+};
+
+const beach_sand = {
+	'34:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'62:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+}
+
+const wall_border = {
+	'31:0:0': {
+		items: [
+			//'tiles:Grass',
+			'tiles:WallBorder.TopRightCorner',
+		]
+	},
+}
 
 
 for (let x = mapInfo.minX; x < mapInfo.maxX; x++) {
@@ -11409,6 +15629,21 @@ for (let x = mapInfo.minX; x < mapInfo.maxX; x++) {
         const sandSqm = sand[`${x}:${y}:0`];
         if (sandSqm) {
             stack = sandSqm.items;
+        }
+
+		const beachsandSqm = beach_sand[`${x}:${y}:0`];
+        if (beachsandSqm) {
+            stack = beachsandSqm.items;
+        }
+
+		const beachborderSqm = beach_border[`${x}:${y}:0`];
+        if (beachborderSqm) {
+            stack = beachborderSqm.items;
+        }
+
+		const wallborderSqm = wall_border[`${x}:${y}:0`];
+        if (wallborderSqm) {
+            stack = wallborderSqm.items;
         }
 
         const item = tileItems[`${x}:${y}:0`];
