@@ -34,7 +34,6 @@ const App = () => {
         });
     }, []);
 
-
     return (<div className={`game ${debugMode ? 'debugMode' : ''}`} style={{ width: maxX * tileWidth, height: maxY * tileHeight }}>
         <ScreenMessage />
         <React.Fragment>
