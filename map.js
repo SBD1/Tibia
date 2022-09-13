@@ -1,8 +1,8 @@
 export const mapInfo = {
     minX: 0,
     minY: 0,
-    maxX: 63,
-    maxY: 63,
+    maxX: 64,
+    maxY: 64,
     minZ: -7,
     maxZ: 8,
 };
@@ -11384,154 +11384,6 @@ const lava = {
 	},
 };
 
-const beach_border = {
-	'34:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'35:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'36:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'37:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'38:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'39:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'40:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'41:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'42:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'43:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'44:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'45:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'46:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'47:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'48:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'49:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'50:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'51:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'52:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'53:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'54:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'55:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'56:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'57:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'58:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'59:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'60:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'61:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-	'62:62:0': {
-		items: [
-			'tiles:BeachBorder',
-		]
-	},
-};
-
 const beach_sand = {
 	'34:34:0': {
 		items: [
@@ -11669,6 +11521,16 @@ const beach_sand = {
 		]
 	},
 	'34:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'34:63:0': {
 		items: [
 			'tiles:Sand',
 		]
@@ -11813,6 +11675,16 @@ const beach_sand = {
 			'tiles:Sand',
 		]
 	},
+	'35:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'35:63:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
 	'36:34:0': {
 		items: [
 			'tiles:Sand',
@@ -11949,6 +11821,16 @@ const beach_sand = {
 		]
 	},
 	'36:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'36:63:0': {
 		items: [
 			'tiles:Sand',
 		]
@@ -12093,6 +11975,16 @@ const beach_sand = {
 			'tiles:Sand',
 		]
 	},
+	'37:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'37:63:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
 	'38:34:0': {
 		items: [
 			'tiles:Sand',
@@ -12229,6 +12121,16 @@ const beach_sand = {
 		]
 	},
 	'38:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'38:63:0': {
 		items: [
 			'tiles:Sand',
 		]
@@ -12373,6 +12275,16 @@ const beach_sand = {
 			'tiles:Sand',
 		]
 	},
+	'39:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'39:63:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
 	'40:34:0': {
 		items: [
 			'tiles:Sand',
@@ -12509,6 +12421,16 @@ const beach_sand = {
 		]
 	},
 	'40:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'40:63:0': {
 		items: [
 			'tiles:Sand',
 		]
@@ -12653,6 +12575,16 @@ const beach_sand = {
 			'tiles:Sand',
 		]
 	},
+	'41:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'41:63:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
 	'42:34:0': {
 		items: [
 			'tiles:Sand',
@@ -12789,6 +12721,16 @@ const beach_sand = {
 		]
 	},
 	'42:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'42:63:0': {
 		items: [
 			'tiles:Sand',
 		]
@@ -12933,6 +12875,16 @@ const beach_sand = {
 			'tiles:Sand',
 		]
 	},
+	'43:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'43:63:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
 	'44:34:0': {
 		items: [
 			'tiles:Sand',
@@ -13069,6 +13021,16 @@ const beach_sand = {
 		]
 	},
 	'44:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'44:63:0': {
 		items: [
 			'tiles:Sand',
 		]
@@ -13213,6 +13175,16 @@ const beach_sand = {
 			'tiles:Sand',
 		]
 	},
+	'45:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'45:63:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
 	'46:34:0': {
 		items: [
 			'tiles:Sand',
@@ -13349,6 +13321,16 @@ const beach_sand = {
 		]
 	},
 	'46:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'46:63:0': {
 		items: [
 			'tiles:Sand',
 		]
@@ -13493,6 +13475,16 @@ const beach_sand = {
 			'tiles:Sand',
 		]
 	},
+	'47:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'47:63:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
 	'48:34:0': {
 		items: [
 			'tiles:Sand',
@@ -13629,6 +13621,16 @@ const beach_sand = {
 		]
 	},
 	'48:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'48:63:0': {
 		items: [
 			'tiles:Sand',
 		]
@@ -13773,6 +13775,16 @@ const beach_sand = {
 			'tiles:Sand',
 		]
 	},
+	'49:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'49:63:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
 	'50:34:0': {
 		items: [
 			'tiles:Sand',
@@ -13909,6 +13921,16 @@ const beach_sand = {
 		]
 	},
 	'50:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'50:63:0': {
 		items: [
 			'tiles:Sand',
 		]
@@ -14053,6 +14075,16 @@ const beach_sand = {
 			'tiles:Sand',
 		]
 	},
+	'51:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'51:63:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
 	'52:34:0': {
 		items: [
 			'tiles:Sand',
@@ -14189,6 +14221,16 @@ const beach_sand = {
 		]
 	},
 	'52:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'52:63:0': {
 		items: [
 			'tiles:Sand',
 		]
@@ -14333,6 +14375,16 @@ const beach_sand = {
 			'tiles:Sand',
 		]
 	},
+	'53:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'53:63:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
 	'54:34:0': {
 		items: [
 			'tiles:Sand',
@@ -14469,6 +14521,16 @@ const beach_sand = {
 		]
 	},
 	'54:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'54:63:0': {
 		items: [
 			'tiles:Sand',
 		]
@@ -14613,6 +14675,16 @@ const beach_sand = {
 			'tiles:Sand',
 		]
 	},
+	'55:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'55:63:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
 	'56:34:0': {
 		items: [
 			'tiles:Sand',
@@ -14749,6 +14821,16 @@ const beach_sand = {
 		]
 	},
 	'56:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'56:63:0': {
 		items: [
 			'tiles:Sand',
 		]
@@ -14893,6 +14975,16 @@ const beach_sand = {
 			'tiles:Sand',
 		]
 	},
+	'57:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'57:63:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
 	'58:34:0': {
 		items: [
 			'tiles:Sand',
@@ -15029,6 +15121,16 @@ const beach_sand = {
 		]
 	},
 	'58:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'58:63:0': {
 		items: [
 			'tiles:Sand',
 		]
@@ -15173,6 +15275,16 @@ const beach_sand = {
 			'tiles:Sand',
 		]
 	},
+	'59:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'59:63:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
 	'60:34:0': {
 		items: [
 			'tiles:Sand',
@@ -15309,6 +15421,16 @@ const beach_sand = {
 		]
 	},
 	'60:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'60:63:0': {
 		items: [
 			'tiles:Sand',
 		]
@@ -15453,6 +15575,16 @@ const beach_sand = {
 			'tiles:Sand',
 		]
 	},
+	'61:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'61:63:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
 	'62:34:0': {
 		items: [
 			'tiles:Sand',
@@ -15593,16 +15725,2052 @@ const beach_sand = {
 			'tiles:Sand',
 		]
 	},
-}
-
-const wall_border = {
-	'31:0:0': {
+	'62:62:0': {
 		items: [
-			//'tiles:Grass',
-			'tiles:WallBorder.TopRightCorner',
+			'tiles:Sand',
+		]
+	},
+	'62:63:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:34:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:35:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:36:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:37:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:38:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:39:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:40:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:41:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:42:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:43:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:44:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:45:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:46:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:47:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:48:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:49:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:50:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:51:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:52:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:53:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:54:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:55:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:56:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:57:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:58:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:59:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:60:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:61:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:62:0': {
+		items: [
+			'tiles:Sand',
+		]
+	},
+	'63:63:0': {
+		items: [
+			'tiles:Sand',
 		]
 	},
 }
+
+const walls = {
+	'31:0:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:1:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:2:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:3:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:4:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:5:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:6:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:7:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:8:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:9:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:10:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:11:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:12:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:13:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:14:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:15:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:16:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:17:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:18:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:19:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:20:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:21:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:22:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:23:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:24:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:25:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:26:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:27:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:28:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:29:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:30:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'31:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'31:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'31:34:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:35:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:36:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:37:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:38:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:39:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:40:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:41:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:42:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:43:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:44:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:45:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:46:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:47:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:48:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:49:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:50:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:51:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:52:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:53:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:54:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:55:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:56:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:57:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:58:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:59:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:60:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:61:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:62:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'31:63:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaDireita',
+		]
+	},
+	'32:0:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:1:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:2:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:3:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:4:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:5:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:6:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:7:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:8:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:9:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:10:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:11:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:12:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:13:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:14:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:15:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:16:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:17:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:18:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:19:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:20:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:21:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:22:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:23:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:24:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:25:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:26:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:27:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:28:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:29:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:30:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:34:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:35:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:36:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:37:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:38:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:39:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:40:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:41:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:42:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:43:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:44:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:45:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:46:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:47:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:48:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:49:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:50:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:51:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:52:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:53:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:54:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:55:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:56:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:57:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:58:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:59:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:60:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:61:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:62:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'32:63:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'33:0:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:1:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:2:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:3:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:4:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:5:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:6:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:7:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:8:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:9:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:10:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:11:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:12:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:13:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:14:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:15:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:16:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:17:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:18:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:19:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:20:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:21:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:22:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:23:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:24:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:25:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:26:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:27:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:28:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:29:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:30:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'33:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'33:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'33:34:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:35:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:36:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:37:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:38:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:39:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:40:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:41:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:42:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:43:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:44:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:45:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:46:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:47:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:48:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:49:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:50:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:51:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:52:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:53:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:54:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:55:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:56:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:57:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:58:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:59:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:60:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:61:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:62:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'33:63:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda',
+		]
+	},
+	'0:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'1:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'2:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'3:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'4:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'5:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'6:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'7:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'8:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'9:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'10:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'11:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'12:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'13:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'14:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'15:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'16:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'17:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'18:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'19:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'20:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'21:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'22:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'23:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'24:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'25:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'26:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'27:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'28:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'29:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'30:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'0:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'1:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'2:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'3:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'4:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'5:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'6:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'7:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'8:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'9:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'10:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'11:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'12:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'13:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'14:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'15:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'16:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'17:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'18:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'19:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'20:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'21:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'22:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'23:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'24:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'25:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'26:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'27:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'28:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'29:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'30:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'0:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'1:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'2:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'3:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'4:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'5:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'6:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'7:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'8:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'9:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'10:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'11:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'12:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'13:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'14:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'15:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'16:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'17:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'18:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'19:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'20:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'21:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'22:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'23:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'24:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'25:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'26:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'27:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'28:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'29:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'30:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'33:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaEsquerda',
+		]
+	},
+	'34:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'35:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'36:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'37:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'38:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'39:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'40:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'41:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'42:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'43:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'44:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'45:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'46:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'47:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'48:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'49:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'50:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'51:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'52:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'53:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'54:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'55:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'56:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'57:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'58:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'59:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'60:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'61:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'62:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'63:33:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaEsquerda2',
+		]
+	},
+	'34:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'35:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'36:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'37:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'38:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'39:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'40:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'41:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'42:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'43:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'44:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'45:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'46:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'47:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'48:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'49:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'50:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'51:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'52:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'53:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'54:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'55:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'56:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'57:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'58:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'59:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'60:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'61:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'62:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'63:32:0': {
+		items: [
+			'tiles:WallBorder.tetoCaverna',
+		]
+	},
+	'34:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'35:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'36:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'37:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'38:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'39:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'40:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'41:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'42:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'43:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'44:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'45:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'46:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'47:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'48:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'49:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'50:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'51:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'52:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'53:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'54:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'55:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'56:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'57:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'58:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'59:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'60:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'61:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'62:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+	'63:31:0': {
+		items: [
+			'tiles:WallBorder.tetoCavernaCimaBaixo',
+		]
+	},
+
+}
+
 
 
 for (let x = mapInfo.minX; x < mapInfo.maxX; x++) {
@@ -15636,14 +17804,10 @@ for (let x = mapInfo.minX; x < mapInfo.maxX; x++) {
             stack = beachsandSqm.items;
         }
 
-		const beachborderSqm = beach_border[`${x}:${y}:0`];
-        if (beachborderSqm) {
-            stack = beachborderSqm.items;
-        }
 
-		const wallborderSqm = wall_border[`${x}:${y}:0`];
-        if (wallborderSqm) {
-            stack = wallborderSqm.items;
+		const wallsSqm = walls[`${x}:${y}:0`];
+        if (wallsSqm) {
+            stack = wallsSqm.items;
         }
 
         const item = tileItems[`${x}:${y}:0`];
