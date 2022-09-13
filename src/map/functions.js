@@ -2,11 +2,13 @@ import React from 'react';
 import fields from '../components/map/fields/**/*.js';
 import tiles from '../components/map/tiles/**/*.js';
 import terrain from '../components/map/terrain/**/*.js';
+import monster from '../components/map/monster/**/*.js';
 
 const components = {
     fields,
     tiles,
     terrain,
+    monster,
 };
 
 export const prepareStack = (stack = [], { index, top, left, axis }) =>
