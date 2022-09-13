@@ -1,7 +1,8 @@
+-- Verificação da capacidade da mochila
 CREATE OR REPLACE FUNCTION verificar_limite_inventario() RETURNS trigger AS $verificar_limite_inventario$
     DECLARE
         capacidade_inventario INTEGER;
-		    peso_item_atual INTEGER;
+		peso_item_atual INTEGER;
         soma_peso_itens INTEGER;
     BEGIN
         SELECT capacidade INTO capacidade_inventario FROM inventario WHERE id_player = NEW.id_player;
@@ -38,3 +39,26 @@ CREATE OR REPLACE TRIGGER trigger_verificar_limite_inventario
 BEFORE INSERT ON inventario_guarda_instancia_item
 FOR EACH ROW
 EXECUTE FUNCTION verificar_limite_inventario();
+
+-- NPC que carrega item deve ser comerciante
+CREATE OR REPLACE FUNCTION verificar_id_npc_vendedor() RETURNS trigger AS $verificar_id_npc_vendedor$
+    DECLARE
+        _tipo_npc tiponpc;
+    BEGIN
+        SELECT tipo INTO _tipo_npc FROM npc WHERE id = NEW.id_npc;
+        IF LOWER(_tipo_npc) <> 'comerciante' THEN
+            RAISE EXCEPTION 'Somente NPCs comerciantes podem vender ou carregar itens.';
+        END IF;
+        RETURN NEW;
+    END;
+$verificar_id_npc_vendedor$ LANGUAGE plpgsql;
+
+CREATE OR REPLACE TRIGGER trigger_verificar_id_npc_vendedor
+BEFORE INSERT OR UPDATE ON vende
+FOR EACH ROW
+EXECUTE FUNCTION verificar_id_npc_vendedor();
+
+CREATE OR REPLACE TRIGGER trigger_verificar_id_npc_vendedor
+BEFORE INSERT OR UPDATE ON npc_carrega_instancia_item
+FOR EACH ROW
+EXECUTE FUNCTION verificar_id_npc_vendedor();
