@@ -14,7 +14,22 @@ const tileItems = {
     },
     '6:4:0': {
         items: ['terrain:GroundSpikes']
-    }
+    },
+    '7:4:0': {
+        items: ['monster:Criatura.sapo']
+    },
+    '10:4:0': {
+        items: ['monster:Criatura.galinha']
+    },
+    '13:7:0': {
+        items: ['monster:Criatura.snake']
+    },
+    '1:7:0': {
+        items: ['monster:Criatura.croc']
+    },
+    '1:10:0': {
+        items: ['monster:Criatura.cobra']
+    },
 };
 const lake = {
     '5:5:0': {
