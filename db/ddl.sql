@@ -1228,6 +1228,7 @@ ALTER SEQUENCE public.regiao_id_seq OWNED BY public.regiao.id;
 CREATE TABLE public.riqueza (
     id integer NOT NULL,
     nome character(50),
+    aumento bigint NOT NULL,
     valor bigint NOT NULL,
     min_level smallint NOT NULL,
     descricao text,

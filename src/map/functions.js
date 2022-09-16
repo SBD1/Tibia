@@ -3,6 +3,8 @@ import fields from '../components/map/fields/**/*.js';
 import tiles from '../components/map/tiles/**/*.js';
 import terrain from '../components/map/terrain/**/*.js';
 import monster from '../components/map/monster/**/*.js';
+// import api from '../services/api';
+import axios from 'axios';
 
 const components = {
     fields,
@@ -13,6 +15,22 @@ const components = {
 
 export const prepareStack = (stack = [], { index, top, left, axis }) =>
     stack.map((item, currIndex) => {
+
+            if(item == "fields:Poison") {
+                console.log("Show!!!!");
+                axios.get('http://localhost:3333/item')
+                .then(function (response) {
+                  console.log("Deu bom!")
+                  console.log(response.data);
+                })
+                .catch(function (error) {
+                  // handle error
+                  console.log("Deu erro");
+                  console.log(error);
+                })
+                
+            }
+
             let [type, name] = (item || '').split(':');
             if (!type || !name) {
                 return null;

@@ -4228,21 +4228,17 @@ INSERT INTO item (id, tipo) VALUES
 INSERT INTO item (id, tipo) VALUES
 (42, 'riqueza');
 
-SELECT  armas.id, tipo, nome, ataque, defesa, vocacao, min_level, bonus, descricao, peso FROM item INNER JOIN armas ON item.id = armas.id;
-
 INSERT INTO armas (id, nome, ataque, defesa, vocacao, min_level, bonus, descricao , peso) VALUES
 (1, 'Axe', 12, 6, 'none', 0, 0,'Vocês está vendo Axe. Peso 40.', 40),
 (5, 'Battle Axe', 25, 10, 'none', 0, 0,'Vocês está vendo Battle Axe. Peso 50.', 50),
 (6, 'Daramian Axe', 17, 8, 'none', 0, 0,'Vocês está vendo Daramian Axe. Peso 41.', 41),
 (7, 'Golden Axe', 10, 5, 'none', 0, 0,'Vocês está vendo Golden Axe. Peso 20.', 20),
 (8, 'Hand Axe', 10, 5, 'none', 0, 0,'Vocês está vendo Hand Axe. Peso 18.', 18),
-
 (9, 'Bone Sword', 13, 10, 'none', 0, 0,'Vocês está vendo Bone Sword. Peso 19.', 19),
 (10, 'Carlin Sword', 15, 13, 'none', 0, 0,'Vocês está vendo Carlin Sword. Peso 40.', 40),
 (11, 'Combat Knife', 8, 6, 'none', 0, 0,'Vocês está vendo Combat Knife. Peso 9.', 9),
 (12, 'Broadsword', 26, 23, 'none', 0, 0,'Vocês está vendo Broadsword. Peso 52.', 52),
 (13, 'Dagger', 8, 6, 'none', 0, 0,'Vocês está vendo Dagger. Peso 9.', 9),
-
 (14, 'Assassin Star', 65, 0, 'none', 0, 0,'Vocês está vendo Assassin Star. Peso 2.', 2),
 (15, 'Enchanted Spear', 38, 0, 'none', 0, 0,'Vocês está vendo Enchanted Spear. Peso 20.', 20),
 (16, 'Glooth Spear', 55, 0, 'none', 0, 0,'Vocês está vendo Glooth Spear. Peso 26.', 26),
@@ -4270,19 +4266,16 @@ INSERT INTO equipamento (id, nome, vocacao, min_level, bonus, descricao , peso, 
 (25, 'Blue Spectacles', 'none', 0, 0, 'Você está vendo Blue Spectacles. Peso  2.', 2, 0, 'cabeca'),
 (26, 'Bonelord Helmet', 'none', 0, 0, 'Você está vendo Bonelord Helmet. Peso  46.', 46, 2, 'cabeca'),
 (27, 'Brass Helmet', 'none', 0, 0, 'Você está vendo Brass Helmet. Peso  27.', 27, 3, 'cabeca'),
-
 (28, 'Albino Plate', 'none', 0, 0, 'Você está vendo Albino Plate. Peso  84.', 84, 11, 'corpo'),
 (29, 'Ball Gown', 'none', 0, 0, 'Você está vendo Ball Gown. Peso  25.', 25, 0, 'corpo'),
 (30, 'Belted Cape', 'none', 0, 0, 'Você está vendo Belted Cape. Peso  35.', 35, 10, 'corpo'),
 (31, 'Blue Robe', 'none', 0, 0, 'Você está vendo Blue Robe. Peso  22.', 22, 11, 'corpo'),
 (32, 'Brass Armor', 'none', 0, 0, 'Você está vendo Brass Armor. Peso  80.', 80, 8, 'corpo'),
-
 (33, 'Bast Skirt', 'none', 0, 0, 'Você está vendo Bast Skirt. Peso  0.', 0, 3, 'pernas'),
 (34, 'Blue Legs', 'none', 0, 0, 'Você está vendo Blue Legs. Peso  18.', 18, 8, 'pernas'),
 (35, 'Brass Legs', 'none', 0, 0, 'Você está vendo Brass Legs. Peso  38.', 38, 5, 'pernas'),
 (36, 'Chain Legs', 'none', 0, 0, 'Você está vendo Blue Spectacles. Peso  35.', 35, 3, 'pernas'),
 (37, 'Chocolatey Dragon Scale Legs', 'none', 0, 0, 'Você está vendo Chocolatey Dragon Scale Legs. Peso  18.', 18, 2, 'pernas'),
-
 (38, 'Crocodile Boots', 'none', 0, 0, 'Você está vendo Crocodile Boots. Peso  9.', 9, 1, 'pes'),
 (39, 'Leather Boots', 'none', 0, 0, 'Você está vendo Ball Gown. Peso  9.', 9, 1, 'pes'),
 (40, 'Metal Spats', 'none', 0, 0, 'Você está vendo Belted Cape. Peso  18.', 18, 1, 'pes'),
@@ -4303,11 +4296,11 @@ INSERT INTO instancia_item (id, id_item) VALUES
 (10, 21), 
 (11, 21), 
 (12, 21),
-(13, 2);
-(14, 2);
-(15, 2);
-(16, 2);
-(17, 2);
+(13, 2),
+(14, 2),
+(15, 2),
+(16, 2),
+(17, 2),
 (18, 2);
 
 INSERT INTO instancia_criatura (id_criatura) VALUES
@@ -4336,11 +4329,11 @@ INSERT INTO habilidades (id_player, velocidade, dano_a_distancia, dano_de_combat
 INSERT INTO guilda (nome, descricao, capacidade, data_de_criacao, id_dono) VALUES
 ('Brs', 'Guilda montada para jogadores brasileiros', '20', '06/30/2022', 1);
 
-INSERT INTO npc_carrega_instancia_item (id_npc, id_instancia_item) VALUES
-(22, 14),
-(22, 15),
-(22, 16),
-(22, 17);
+-- INSERT INTO npc_carrega_instancia_item (id_npc, id_instancia_item) VALUES
+--(22, 14),
+--(22, 15),
+--(22, 16),
+--(22, 17);
 
 -- ALTER TABLE armas ADD COLUMN preco bigint DEFAULT NULL;
 
@@ -4351,6 +4344,8 @@ INSERT INTO npc_carrega_instancia_item (id_npc, id_instancia_item) VALUES
 -- ALTER TABLE riqueza ADD COLUMN preco bigint DEFAULT NULL;
 
 -- ALTER TABLE equipamento ADD COLUMN preco bigint DEFAULT NULL;
+
+-- SELECT  armas.id, tipo, nome, ataque, defesa, vocacao, min_level, bonus, descricao, peso FROM item INNER JOIN armas ON item.id = armas.id;
 
 UPDATE mochila SET preco = 4 WHERE nome = 'Bag';
 UPDATE mochila SET preco = 4 WHERE nome = 'Beach Bag';

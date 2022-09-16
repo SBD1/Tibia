@@ -9,16 +9,28 @@ services:
       - .:/app
       - /app/node_modules
     depends_on:
+      - back
+  back:
+    build: ./backend
+    ports:
+      - '3333:3333'
+    volumes:
+      - ./backend/:/backend
+      - /backend/node_modules
+    depends_on:
       - db
   db:
-    image: 'postgres:14'
+    image: postgres:14
     environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-      - TZ=America/Sao_Paulo
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_DB: "tibia"
+      TZ: America/Sao_Paulo
     volumes:
-      - .:/app
-      - data:/var/lib/postgresql/data
-
-volumes:
-    data:
+        - ./db/ddl.sql:/docker-entrypoint-initdb.d/ddl.sql
+        - ./db/dml.sql:/docker-entrypoint-initdb.d/dml.sql
+    expose: 
+        - "5433"
+    ports:
+      - "5433:5433"
+    command: -p 5433

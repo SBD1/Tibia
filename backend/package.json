@@ -1,0 +1,21 @@
+{
+  "name": "exemplo-back",
+  "version": "1.0.0",
+  "description": "teste",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon -L --watch . src/server.js",
+    "test": "jest --coverage --verbose",
+    "prettier": "prettier"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "knex": "^2.3.0",
+    "nodemon": "^2.0.19",
+    "pg": "^8.8.0"
+  }
+}
