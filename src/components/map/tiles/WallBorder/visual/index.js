@@ -8,6 +8,7 @@ import tetoCavernaEsquerda from './img4.png';
 import tetoCavernaCimaBaixo from './img5.png';
 import tetoCavernaCimaBaixo2 from './img6.png';
 import tetoCavernaEsquerda2 from './img7.png';
+import tetoCavernaDireita2 from './img7.png';
 
 export const options = {
     /* -- edges -- */
@@ -31,6 +32,9 @@ export const options = {
     `,
     tetoCavernaCimaBaixo2: css`
     background-image: url(${tetoCavernaCimaBaixo2});
+    `,
+    tetoCavernaDireita2: css`
+        background-image: url(${tetoCavernaDireita2});
     `,
 };
 
