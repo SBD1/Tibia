@@ -1,22 +1,14 @@
 import knex from 'knex';
 
 const db = knex({
-  client: 'postgres',
+  client: 'pg',
   connection: {
-    host: 'db',
+    host : '127.0.0.1',
+    port : 5432,
     user: 'postgres',
     password: 'postgres',
     database: 'tibia',
   },
 });
-
-export async function connection () {
-  await db.select('*').from('item')
-  .then((item) => {
-    console.log(item);
-  }).catch((error) => {
-    console.log(error);
-  });
-}
 
 export default db;
