@@ -4255,8 +4255,8 @@ INSERT INTO mochila (id, nome, capacidade, min_level, descricao, peso) VALUES
 
 
 
-INSERT INTO riqueza (id, nome, aumento, min_level, descricao, peso, valor) VALUES
-(4, 'Gold Coin', 1, 0, 'Vocês está vendo Gold Coin. Peso 1.', 1, 1);
+INSERT INTO riqueza (id, nome, min_level, descricao, peso, valor) VALUES
+(4, 'Gold Coin', 0, 'Vocês está vendo Gold Coin. Peso 1.', 1, 1);
 
 
 INSERT INTO equipamento (id, nome, vocacao, min_level, bonus, descricao , peso, defesa, pch) VALUES

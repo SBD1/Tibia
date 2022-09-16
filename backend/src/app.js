@@ -351,15 +351,29 @@ app.get("/item", async (req, res) => {
     }
   });
 
-  app.get("/get_tipo_item", async (req, res) => {
+  app.get("/get_player_position", async (req, res) => {
     try {
       console.log("Acessei o banco!");
-      const tibia = await db.raw('SELECT public.get_tipo_item(?)', id_item);
-      res.status(200).json(tibia.data);
+      const tibia = await db.raw('SELECT get_player_position(?)', 1);
+      res.status(200).json(tibia);
     } catch (error) {
       console.log("Deu ruim!!!");
       return res.status(400).json({ message: `Can't list tibia: ${error}` });
     }
   });
+
+  app.get("/valid_region_change", async (req, res) => {
+    try {
+      console.log("Acessei o banco!");
+      const tibia = await db.raw('SELECT public.valid_region_change(?, ?)', [1, 1]);
+      res.status(200).json(tibia);
+    } catch (error) {
+      console.log("Deu ruim!!!");
+      return res.status(400).json({ message: `Can't list tibia: ${error}` });
+    }
+  });
+
+  
+
 
 module.exports = app;
