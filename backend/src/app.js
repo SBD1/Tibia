@@ -219,7 +219,6 @@ app.get("/inventario_guarda_instancia_item", async (req, res) => {
   }
 });
 
-
 app.get("/item", async (req, res) => {
     try {
       console.log("Acessei o banco!");
@@ -297,7 +296,6 @@ app.get("/item", async (req, res) => {
     }
   });
 
-
   app.get("/player", async (req, res) => {
     try {
       console.log("Acessei o banco!");
@@ -341,7 +339,7 @@ app.get("/item", async (req, res) => {
       return res.status(400).json({ message: `Can't list tibia: ${error}` });
     }
   });
-  
+
   app.get("/vende", async (req, res) => {
     try {
       console.log("Acessei o banco!");
@@ -353,5 +351,15 @@ app.get("/item", async (req, res) => {
     }
   });
 
+  app.get("/get_tipo_item", async (req, res) => {
+    try {
+      console.log("Acessei o banco!");
+      const tibia = await db.raw('SELECT public.get_tipo_item(?)', id_item);
+      res.status(200).json(tibia.data);
+    } catch (error) {
+      console.log("Deu ruim!!!");
+      return res.status(400).json({ message: `Can't list tibia: ${error}` });
+    }
+  });
 
 module.exports = app;
