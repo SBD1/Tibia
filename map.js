@@ -15977,7 +15977,6 @@ const walls = {
 	'31:14:0': {
 		items: [
 			'tiles:WallBorder.tetoCavernaDireita',
-			'tiles:WallBorder.tetoCavernaCimaBaixo2',
 		]
 	},
 	'31:15:0': {
@@ -15988,7 +15987,6 @@ const walls = {
 	'31:16:0': {
 		items: [
 			'tiles:WallBorder.tetoCavernaDireita',
-			'tiles:WallBorder.tetoCavernaCimaBaixo',
 		]
 	},
 	'31:17:0': {
@@ -16144,7 +16142,6 @@ const walls = {
 	'31:47:0': {
 		items: [
 			'tiles:WallBorder.tetoCavernaDireita',
-			'tiles:WallBorder.tetoCavernaCimaBaixo2',
 		]
 	},
 	'31:48:0': {
@@ -16155,7 +16152,6 @@ const walls = {
 	'31:49:0': {
 		items: [
 			'tiles:WallBorder.tetoCavernaDireita',
-			'tiles:WallBorder.tetoCavernaCimaBaixo',
 		]
 	},
 	'31:50:0': {
@@ -16301,7 +16297,6 @@ const walls = {
 	'32:14:0': {
 		items: [
 			'tiles:WallBorder.tetoCaverna',
-			'tiles:WallBorder.tetoCavernaCimaBaixo2',
 		]
 	},
 	'32:15:0': {
@@ -16312,7 +16307,6 @@ const walls = {
 	'32:16:0': {
 		items: [
 			'tiles:WallBorder.tetoCaverna',
-			'tiles:WallBorder.tetoCavernaCimaBaixo',
 		]
 	},
 	'32:17:0': {
@@ -16468,7 +16462,6 @@ const walls = {
 	'32:47:0': {
 		items: [
 			'tiles:WallBorder.tetoCaverna',
-			'tiles:WallBorder.tetoCavernaCimaBaixo2',
 		]
 	},
 	'32:48:0': {
@@ -16479,7 +16472,6 @@ const walls = {
 	'32:49:0': {
 		items: [
 			'tiles:WallBorder.tetoCaverna',
-			'tiles:WallBorder.tetoCavernaCimaBaixo',
 		]
 	},
 	'32:50:0': {
@@ -16945,7 +16937,6 @@ const walls = {
 	'14:31:0': {
 		items: [
 			'tiles:WallBorder.tetoCavernaCimaBaixo',
-			'tiles:WallBorder.tetoCavernaDireita2',
 		]
 	},
 	'15:31:0': {
@@ -16956,7 +16947,6 @@ const walls = {
 	'16:31:0': {
 		items: [
 			'tiles:WallBorder.tetoCavernaCimaBaixo',
-			'tiles:WallBorder.tetoCavernaDireita',
 		]
 	},
 	'17:31:0': {
@@ -17102,7 +17092,6 @@ const walls = {
 	'14:32:0': {
 		items: [
 			'tiles:WallBorder.tetoCaverna',
-			'tiles:WallBorder.tetoCavernaCimaBaixo',
 		]
 	},
 	'15:32:0': {
@@ -17113,7 +17102,6 @@ const walls = {
 	'16:32:0': {
 		items: [
 			'tiles:WallBorder.tetoCaverna',
-			'tiles:WallBorder.tetoCavernaDireita',
 		]
 	},
 	'17:32:0': {
@@ -17564,7 +17552,6 @@ const walls = {
 	'47:32:0': {
 		items: [
 			'tiles:WallBorder.tetoCaverna',
-			'tiles:WallBorder.tetoCavernaDireita2',
 		]
 	},
 	'48:32:0': {
@@ -17575,7 +17562,6 @@ const walls = {
 	'49:32:0': {
 		items: [
 			'tiles:WallBorder.tetoCaverna',
-			'tiles:WallBorder.tetoCavernaDireita',
 		]
 	},
 	'50:32:0': {
@@ -17715,8 +17701,7 @@ const walls = {
 	},
 	'47:31:0': {
 		items: [
-			'tiles:WallBorder.tetoCavernaCimaBaixo',
-			'tiles:WallBorder.tetoCavernaDireita2',			
+			'tiles:WallBorder.tetoCavernaCimaBaixo',	
 		]
 	},
 	'48:31:0': {
@@ -17727,7 +17712,6 @@ const walls = {
 	'49:31:0': {
 		items: [
 			'tiles:WallBorder.tetoCavernaCimaBaixo',
-			'tiles:WallBorder.tetoCavernaDireita',
 		]
 	},
 	'50:31:0': {
