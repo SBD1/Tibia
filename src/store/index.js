@@ -39,7 +39,7 @@ const StateProvider = ({ children }) => {
         ...developerReducer,
         ...hudReducer,
         ...playerReducer,
-    };
+    };  
 
     const [state, dispatch] = useReducer((state, action) => {
         if (!action.type) {

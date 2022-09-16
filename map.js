@@ -30,7 +30,7 @@ const tileItems = {
     },
     '1:10:0': {
         items: ['monster:Criatura.cobra']
-    },
+    }
 };
 
 const lake = {

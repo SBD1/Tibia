@@ -7,6 +7,7 @@ import Player from './src/components/alive/Player';
 import { toggleDebugMode } from './src/store/actions/developer';
 import { store, StateProvider } from './src/store';
 import ScreenMessage from './src/components/hud/ScreenMessage';
+import background from './src/components/itens/armas/img/espadas/Inventory.png';
 
 import './src/scss/index.scss';
 
@@ -35,6 +36,7 @@ const App = () => {
     }, []);
 
     return (<div className={`game ${debugMode ? 'debugMode' : ''}`} style={{ width: maxX * tileWidth, height: maxY * tileHeight }}>
+            <div style={{ backgroundImage: `url(${background})`, height: '50px', width: '30vh', right: 0,  }}></div>
         <ScreenMessage />
         <React.Fragment>
             <Player />

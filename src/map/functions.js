@@ -3,7 +3,7 @@ import fields from '../components/map/fields/**/*.js';
 import tiles from '../components/map/tiles/**/*.js';
 import terrain from '../components/map/terrain/**/*.js';
 import monster from '../components/map/monster/**/*.js';
-// import api from '../services/api';
+// import app from '../../backend/src/app';
 import axios from 'axios';
 
 const components = {
@@ -12,6 +12,8 @@ const components = {
     terrain,
     monster,
 };
+
+let equip4;
 
 export const prepareStack = (stack = [], { index, top, left, axis }) =>
     stack.map((item, currIndex) => {
@@ -22,6 +24,10 @@ export const prepareStack = (stack = [], { index, top, left, axis }) =>
                 .then(function (response) {
                   console.log("Deu bom!")
                   console.log(response.data);
+                  console.log("equipamentos! 4")
+                  equip4 = response.data;
+                  console.log(equip4[0])
+
                 })
                 .catch(function (error) {
                   // handle error
