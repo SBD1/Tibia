@@ -351,10 +351,13 @@ app.get("/item", async (req, res) => {
     }
   });
 
+
+  var posicao;
   app.get("/get_player_position", async (req, res) => {
     try {
       console.log("Acessei o banco!");
       const tibia = await db.raw('SELECT get_player_position(?)', 1);
+      posicao = tibia.rows[0]["get_player_position"];
       res.status(200).json(tibia);
     } catch (error) {
       console.log("Deu ruim!!!");
