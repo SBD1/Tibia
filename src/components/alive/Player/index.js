@@ -124,7 +124,7 @@ const Player = (props = {}) => {
     const { state: globalState } = React.useContext(store);
     const {
         player: {
-            name,
+            name, 
             maxHealth,
             maxMana,
             currentHealth,

@@ -10,6 +10,8 @@ import ScreenMessage from './src/components/hud/ScreenMessage';
 
 import './src/scss/index.scss';
 
+
+
 const App = () => {
     const {
         map = [],
