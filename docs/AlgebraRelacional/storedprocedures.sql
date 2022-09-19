@@ -228,3 +228,15 @@ CREATE OR REPLACE PROCEDURE unequip_weapon_from_left_hand(_id_player INTEGER)
   
   END;
 $$ LANGUAGE plpgsql;
+
+CREATE OR REPLACE FUNCTION get_id_posicao_with_coord(x INTEGER, y INTEGER)
+	RETURNS INTEGER AS $$
+	DECLARE
+  	_id_posicao INTEGER;
+BEGIN
+	_id_posicao := (SELECT id FROM localizacao WHERE posicao_x = x and posicao_y = y);
+	RETURN _id_posicao;
+END;
+$$ LANGUAGE plpgsql;
+
+SELECT get_id_posicao_with_coord(50,31);

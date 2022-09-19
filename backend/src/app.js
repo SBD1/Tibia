@@ -376,6 +376,21 @@ app.get("/item", async (req, res) => {
     }
   });
 
+  app.get("/get_id_posicao_with_coord", async (req, res) => {
+    try {
+      console.log("Acessei o banco!!!");
+      const tibia = await db.raw('SELECT public.get_id_posicao_with_coord(?, ?)', [req.query.x, req.query.y]);
+      //console.log(req.query.x);
+      //console.log(req.query.y);
+      posicao = tibia.rows[0]["get_id_posicao_with_coord"];
+      //console.log(posicao);
+      res.status(200).json(tibia);
+    } catch (error) {
+      console.log("Deu ruim!!!");
+      return res.status(400).json({ message: `Can't list tibia: ${error}` });
+    }
+  });
+
   
 
 
