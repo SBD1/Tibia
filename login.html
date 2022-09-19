@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Tibia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="login.css" />
+  <link/>
+  <script src="login.js" defer></script>
+</head>
+<body>
+  
+  <div class="container" >
+    <div class="content">     
+ 
+      <!--FORMULÁRIO DE CADASTRO-->
+      <div id="cadastro">
+        <form id="formularioCadastro"> 
+          <h1>Bem vindo ao Tibia! Cadastre o seu player</h1> 
+           
+          <p> 
+            <label for="nome_usuario">Seu usuario</label>
+            <input id="id_usuario" name="nome_usuario" required="required" type="text" placeholder="usuario" />
+          </p>
+           
+          
+           
+          <p> 
+            <label for="senha_cad">Sua senha</label>
+            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
+          </p>
+      
+          <button type="submit" id="btnCadastrar" class="btn btn-info" onclick="login()" >  
+            Ir para o Jogo
+           </button>
+          
+        </form>
+        
+        
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function login(){
+      window.location.href="index.html"
+    }
+  </script>
+  
+  
+</body>
+</html>
