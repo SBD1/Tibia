@@ -31,6 +31,27 @@ const tileItems = {
     '1:10:0': {
         items: ['monster:Criatura.cobra']
     },
+    '11:18:0': {
+        items: ['monster:Criatura.Acid_Blob']
+    },
+    '16:8:0': {
+        items: ['monster:Criatura.Death_Blob']
+    },
+    '12:12:0': {
+        items: ['monster:Criatura.Slime']
+    },
+    '18:8:0': {
+        items: ['monster:Criatura.Ancient_Scarab']
+    },
+    '20:5:0': {
+        items: ['monster:Criatura.Brimstone_Bug']
+    },
+    '21:8:0': {
+        items: ['monster:Criatura.Butterfly_Azul']
+    },
+    '23:3:0': {
+        items: ['monster:Criatura.Exotic_Cave_Spider']
+    }
 };
 
 const lake = {
