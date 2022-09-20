@@ -15,7 +15,7 @@ Repositório para o projeto de desenvolvimento do jogo Tibia da disciplina de Si
 Tibia, jogo de RPG gratuito para computadores, é um dos maiores sucessos dentre os games onlines. Ficou bastante famoso no final do século XX e começo do século XXI, e até hoje, continua fazendo bastante sucesso entre os fãs do gênero.
 
 <p align="center">
-    <img src= './assets/images/tibiagif.gif' width=960 heigth=540>
+    <img src= './assets/images/tibiatrailer.gif' width=960 heigth=540>
 </p>
 
 ## :computer: Equipe
@@ -36,4 +36,4 @@ Tibia, jogo de RPG gratuito para computadores, é um dos maiores sucessos dentre
 | Módulo 1 | 04/07/2022                | Modelagem do projeto                       |
 | Modulo 2 | 01/08/2022                | DDL + DML (parcial)                        |
 | Módulo 3 | 29/08/2022                | Triggers, stored procedures e transactions |
-| Módulo 4 |                           |                                            |
+| Módulo 4 | 12/09/2022                | Apresentação final                         |
